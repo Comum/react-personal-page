@@ -6,11 +6,11 @@ const H1 = styled.h1`
 `
 
 export default class HelloWorld extends Component {
-  greeting = 'world';
-
   render() {
+    const greeting = 'world';
+
     return (
-      <H1>Hello {this.greeting}!!</H1>
+      <H1>Hello {greeting}!!</H1>
     )
   }
 }

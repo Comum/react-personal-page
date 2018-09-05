@@ -1,0 +1,25 @@
+{
+    "extends": "airbnb",
+    "env": {
+      "jest": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "semi": [2, "never"],
+      "import/no-extraneous-dependencies": ["error", {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": true
+      }],
+      "function-paren-newline": [0, "always"]
+    }
+  }

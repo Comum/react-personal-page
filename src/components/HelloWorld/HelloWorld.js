@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const H1 = styled.h1`
   color: blue;
 `
 
-const HelloWorld = () => {
-  const greeting = 'world'
+export default class HelloWorld extends Component {
+  greeting = 'world';
 
-  return (
-    <H1>Hello {greeting}!</H1>
-  )
+  render() {
+    return (
+      <H1>Hello {this.greeting}!!</H1>
+    )
+  }
 }
-
-export default HelloWorld

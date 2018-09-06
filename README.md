@@ -6,7 +6,7 @@ To launch this project in development mode you'll need to run:
 
 ## Production mode
 To deploy this project to production you'll need to:  
-`npm run build`
+`npm build`
 
 # Setup
 This project uses the following tools for development and build for production.
@@ -30,16 +30,16 @@ Several packages were used for this development. But the most important ones wou
 
 # Tests 
 To run unit and integration tests, you'll need to run:  
-`npm run test`
+`npm test`
 
 To check the project's test coverage, you'll need to run:  
-`npm run coverage` - this will serve the test coverage in your browser  
+`npm coverage` - this will serve the test coverage in your browser  
 or  
-`npm run test --coverage` - this will print the coverage report in the terminal
+`npm test --coverage` - this will print the coverage report in the terminal
 
 # Changelog generation
 Every project should have a changelog so every one can have an understanding about the project's evolution at each version.  
 For that we have [commitizen](https://github.com/commitizen/cz-cli) along with [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) to automatically generate a changelog from the project's history.
 
 To generate the changelog file you'll  need to run:  
-`npm run changelog`
+`npm changelog`

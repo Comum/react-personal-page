@@ -2,8 +2,8 @@ const colours = {
   bright: 'white',
   dark: '#58798c',
   gradient: {
-    start: 'grey',
-    end: 'darkGrey',
+    start: 'red',
+    end: 'gold',
   },
 }
 

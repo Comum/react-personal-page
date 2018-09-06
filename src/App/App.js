@@ -1,11 +1,13 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import PropTypes from 'prop-types'
-import HelloWorld from '../components/HelloWorld/HelloWorld'
+
+import './global-styles'
+import Header from '../scenes/components/Header/Header'
 
 const App = props => (
   <Provider store={props.store}>
-    <HelloWorld />
+    <Header />
   </Provider>
 )
 

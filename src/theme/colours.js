@@ -1,9 +1,10 @@
 const colours = {
   bright: 'white',
   dark: '#58798c',
-  gradient: {
-    start: 'red',
-    end: 'gold',
+  style: {
+    primary: '#D05A00',
+    secondary: '#FEFFF8',
+    tertiary: '#29241E',
   },
 }
 

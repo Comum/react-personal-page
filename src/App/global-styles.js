@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components'
-import fonts from '../theme/font'
+import fonts from '../theme/fonts'
 
 /* eslint-disable no-unused-expressions */
 injectGlobal`

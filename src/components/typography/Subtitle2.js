@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 import colours from '../../theme/colours'
-import fonts from '../../theme/font'
+import fonts from '../../theme/fonts'
 
 const Subtitle2 = styled.h2`
   font-size: ${fonts.sizes.subtitle2};
-  color: ${colours.bright};
+  color: ${colours.style.secondary};
   margin: 0;
 `
 

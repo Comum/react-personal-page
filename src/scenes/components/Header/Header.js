@@ -6,11 +6,15 @@ import NameTitle from '../../../components/NameTitle/NameTitle'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
 import Body1 from '../../../components/typography/Body1'
 import colours from '../../../theme/colours'
+import breakpoints from '../../../theme/breakpoints'
 
 const TextContainer = styled.div`
   width: calc(100% - 200px);  
-  
   padding: 30px 100px;
+
+  @media (max-width: ${breakpoints.small}) {
+    padding: 30px 40px;
+  }
 `
 
 const SectionTitleWrapper = styled.div`
@@ -19,7 +23,7 @@ const SectionTitleWrapper = styled.div`
 
 const TextWrapper = styled.div`
   color: ${colours.style.secondary};
-  margin-bottom: 100px;
+  margin: 40px 0 100px;
 `
 
 const Header = () => {

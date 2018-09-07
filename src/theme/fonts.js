@@ -7,6 +7,9 @@ const fonts = {
     sectionTitle: '26px',
     body1: '20px',
     body2: '18px',
+    small: {
+      mainTitle: '40px',
+    },
   },
 }
 

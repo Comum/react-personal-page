@@ -56,7 +56,7 @@ const TextContainer = styled.div`
 `
 
 const About = () => {
-  const title = 'About'
+  const title = 'ABOUT'
   const type = 'sectionTitle'
   const colour = 'primary'
 

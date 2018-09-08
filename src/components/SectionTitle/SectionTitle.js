@@ -19,7 +19,7 @@ const SectionTitle = (props) => {
 
   const SectionTitleUnderline = styled.div`
     width: 50px;
-    height: 5px;
+    height: 4px;
 
     background-color: ${colours.style[props.colour]};
   `

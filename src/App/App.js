@@ -4,10 +4,14 @@ import PropTypes from 'prop-types'
 
 import './global-styles'
 import Header from '../scenes/components/Header/Header'
+import About from '../scenes/components/About/About'
 
 const App = props => (
   <Provider store={props.store}>
-    <Header />
+    <div>
+      <Header />
+      <About />
+    </div>
   </Provider>
 )
 

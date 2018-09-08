@@ -27,7 +27,7 @@ const TextWrapper = styled.div`
 `
 
 const Header = () => {
-  const title = 'Front-end Developer'
+  const title = 'FRONT-END DEVELOPER'
   const type = 'mainTitle'
   const colour = 'secondary'
 

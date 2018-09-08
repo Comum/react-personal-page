@@ -2,6 +2,7 @@ const fonts = {
   mainFont: 'DejaVu Sans',
   fallbackFont: 'Courier New',
   sizes: {
+    subtitle1: '26px',
     subtitle2: '22px',
     mainTitle: '60px',
     sectionTitle: '26px',
@@ -9,6 +10,7 @@ const fonts = {
     body2: '18px',
     small: {
       mainTitle: '40px',
+      sectionTitle: '26px',
     },
   },
 }

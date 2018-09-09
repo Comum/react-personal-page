@@ -9,11 +9,11 @@ const Experience = () => {
   const title = 'EXPERIENCE'
   const type = 'sectionTitle'
   const colour = 'secondary'
-  const iconPath = 'images/icons/exp_icon.png'
+  const iconPath = 'assets/icons/exp_icon.png'
 
   return (
     <ColourContainer>
-        <SectionContainer>
+      <SectionContainer>
         <SectionArea
           title={title}
           type={type}

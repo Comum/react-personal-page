@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import breakpoints from '../../theme/breakpoints'
 
@@ -24,9 +25,13 @@ const Container = styled.div`
 `
 
 const ContentContainer = props => (
-    <Container>
-        {props.children}
-    </Container>
+  <Container>
+    {props.children}
+  </Container>
 )
+
+ContentContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default ContentContainer

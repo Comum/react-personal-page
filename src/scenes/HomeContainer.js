@@ -39,12 +39,11 @@ class HomeContainer extends React.Component {
   signal = axios.CancelToken.source()
 
   render() {
-    console.log('my state', this.state)
     return (
       <div>
         <Header />
         <About />
-        <Experience />
+        <Experience companies={this.state.companies} />
       </div>
     )
   }

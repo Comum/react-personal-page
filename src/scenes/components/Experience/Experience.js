@@ -15,7 +15,7 @@ const getCompaniesList = (companies) => {
   }
 
   return companies.map(company => (
-    <CompanyElement company={company} />
+    <CompanyElement key={company.id} company={company} />
   ))
 }
 
@@ -24,7 +24,6 @@ const Experience = ({ companies }) => {
   const type = 'sectionTitle'
   const colour = 'secondary'
   const iconPath = 'assets/icons/exp_icon.png'
-  console.log(companies)
   const companiesList = getCompaniesList(companies)
 
   return (

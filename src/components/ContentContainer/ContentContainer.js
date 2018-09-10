@@ -14,14 +14,6 @@ const Container = styled.div`
   @media (max-width: ${breakpoints.small}) {
     width: 100%;
   }
-
-  h2 {
-    margin-bottom: 8px;
-  }
-
-  div {
-    margin-bottom: 16px;
-  }
 `
 
 const ContentContainer = props => (

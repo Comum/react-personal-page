@@ -5,7 +5,7 @@ const colours = {
     primary: '#D05A00',
     secondary: '#FEFFF8',
     tertiary: '#29241E',
-    secondaryFaded: '#FF8B33'
+    primaryFaded: '#FF8B33',
   },
 }
 

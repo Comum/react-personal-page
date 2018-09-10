@@ -4,7 +4,7 @@
         "company": "ESN Porto",
         "companyPage": "http://www.esnporto.org/",
         "period": "September 2014 to July 2015",
-        "title": "IT Coordinator",
+        "title": "IT Coordinator (Volunteer)",
         "volunteer": true
     },
     {
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "company": "Blip",
-        "companyPage": "https://blip.com/",
+        "companyPage": "https://www.blip.pt/",
         "period": "May 2017 to present",
         "title": "Front-end developer",
         "volunteer": false

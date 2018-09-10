@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: [
+    'babel-polyfill',
     'react-hot-loader/patch',
     './src/index.js',
   ],
@@ -28,7 +29,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{
       from: './src/assets/',
-      to: 'images/',
+      to: 'assets/',
     }]),
   ],
 }

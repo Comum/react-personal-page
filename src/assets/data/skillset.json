@@ -1,0 +1,30 @@
+[
+    {
+        "tech": "HTML",
+        "perc": 75
+    },
+    {
+        "tech": "CSS",
+        "perc": 85
+    },
+    {
+        "tech": "JavaScript",
+        "perc": 70
+    },
+    {
+        "tech": "AngularJS",
+        "perc": 55
+    },
+    {
+        "tech": "React",
+        "perc": 75
+    },
+    {
+        "tech": "PHP",
+        "perc": 65
+    },
+    {
+        "tech": "MySQL",
+        "perc": 75
+    }
+]

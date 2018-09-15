@@ -15,6 +15,7 @@ class HomeContainer extends React.Component {
 
   componentDidMount() {
     this.onLoadCompanies()
+    this.onLoadSkillset()
   }
 
   componentWillUnmount() {

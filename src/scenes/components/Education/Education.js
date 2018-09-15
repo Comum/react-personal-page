@@ -10,21 +10,17 @@ const Education = () => {
   const type = 'sectionTitle'
   const colour = 'secondary'
   const iconPath = 'assets/icons/edu_icon.png'
+  const bgColour = 'primary'
 
   return (
-    <ColourContainer>
-      <SectionContainer>
-        <SectionArea
-          title={title}
-          type={type}
-          colour={colour}
-          iconPath={iconPath}
-        />
-        <ContentContainer>
-          content
-        </ContentContainer>
-      </SectionContainer>
-    </ColourContainer>
+    <SectionContainer
+      title={title}
+      type={type}
+      colour={colour}
+      iconPath={iconPath}
+      bgColour={bgColour}>
+      content
+    </SectionContainer>
   )
 }
 

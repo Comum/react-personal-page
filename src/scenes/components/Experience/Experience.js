@@ -24,22 +24,18 @@ const Experience = ({ companies }) => {
   const type = 'sectionTitle'
   const colour = 'secondary'
   const iconPath = 'assets/icons/exp_icon.png'
+  const bgColour = 'primary'
   const companiesList = getCompaniesList(companies)
 
   return (
-    <ColourContainer>
-      <SectionContainer>
-        <SectionArea
-          title={title}
-          type={type}
-          colour={colour}
-          iconPath={iconPath}
-        />
-        <ContentContainer>
-          {companiesList}
-        </ContentContainer>
-      </SectionContainer>
-    </ColourContainer>
+    <SectionContainer
+      title={title}
+      type={type}
+      colour={colour}
+      iconPath={iconPath}
+      bgColour={bgColour}>
+        {companiesList}
+    </SectionContainer>
   )
 }
 

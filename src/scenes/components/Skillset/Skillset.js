@@ -37,21 +37,19 @@ const Skillset = ({skillset}) => {
   const type = 'sectionTitle'
   const colour = 'primary'
   const iconPath = 'assets/icons/tools_icon.png'
+  const bgColour = 'secondary'
   const skillsList = getSkillsList(skillset)
 
   return (
-    <SectionContainer>
-        <SectionArea
-          title={title}
-          type={type}
-          colour={colour}
-          iconPath={iconPath}
-        />
-        <ContentContainer>
-          <SkillsetContainer>
-            {skillsList}
-          </SkillsetContainer>
-        </ContentContainer>
+    <SectionContainer
+      title={title}
+      type={type}
+      colour={colour}
+      iconPath={iconPath}
+      bgColour={bgColour}>
+        <SkillsetContainer>
+          {skillsList}
+        </SkillsetContainer>
       </SectionContainer>
   )
 }

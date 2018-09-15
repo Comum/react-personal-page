@@ -4,15 +4,18 @@ import axios from 'axios'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
+import Skillset from './components/Skillset/Skillset'
 
 class HomeContainer extends React.Component {
   state = {
     isLoading: false,
     companies: {},
+    skillset: {},
   }
 
   componentDidMount() {
     this.onLoadCompanies()
+    this.onLoadSkillset()
   }
 
   componentWillUnmount() {
@@ -36,7 +39,25 @@ class HomeContainer extends React.Component {
     }
   }
 
+  onLoadSkillset = async () => {
+    try {
+      this.setState({ isLoading: true })
+      const response = await axios.get('./assets/data/skillset.json', {
+        cancelToken: this.skillSignal.token,
+      })
+      console.log('aqui', response);
+      this.setState({ skillset: response.data, isLoading: true })
+    } catch (err) {
+      if (axios.isCancel(err)) {
+        console.log('Error: ', err.message)
+      } else {
+        this.setState({ isLoading: false })
+      }
+    }
+  }
+
   signal = axios.CancelToken.source()
+  skillSignal = axios.CancelToken.source()
 
   render() {
     return (
@@ -44,6 +65,7 @@ class HomeContainer extends React.Component {
         <Header />
         <About />
         <Experience companies={this.state.companies} />
+        <Skillset skillset={this.state.skillset}/>
       </div>
     )
   }

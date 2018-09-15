@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Skillset from './components/Skillset/Skillset'
+import Education from './components/Education/Education'
 
 class HomeContainer extends React.Component {
   state = {
@@ -66,6 +67,7 @@ class HomeContainer extends React.Component {
         <About />
         <Experience companies={this.state.companies} />
         <Skillset skillset={this.state.skillset}/>
+        <Education />
       </div>
     )
   }

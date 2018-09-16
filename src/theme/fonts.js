@@ -5,6 +5,7 @@ const fonts = {
     subtitle1: '26px',
     subtitle2: '22px',
     subtitle3: '16px',
+    subtitle4: '14px',
     mainTitle: '60px',
     sectionTitle: '26px',
     body1: '20px',

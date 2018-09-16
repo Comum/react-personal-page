@@ -2,7 +2,7 @@
     {
         "id": 1,
         "year": 2014,
-        "course": "Mestrado Integrado em Engenharia Eletrotécnina e Computadores",
+        "course": "Mestrado Integrado em Engenharia Eletrotécnica e Computadores",
         "university": "Faculdade de Engenharia da Universidade do Porto",
         "path": "https://sigarra.up.pt/feup/pt/web_page.inicial"
     },
@@ -12,5 +12,5 @@
         "course": "Erasmus Year",
         "university": "University of York",
         "path": "https://www.york.ac.uk/"
-    },
+    }
 ]

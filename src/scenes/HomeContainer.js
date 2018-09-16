@@ -12,23 +12,29 @@ class HomeContainer extends React.Component {
     isLoading: false,
     companies: {},
     skillset: {},
+    education: {},
   }
 
   componentDidMount() {
     this.onLoadCompanies()
     this.onLoadSkillset()
+    this.onLoadEducation()
   }
 
   componentWillUnmount() {
     this.signal.cancel('Api is being canceled')
   }
 
-  onLoadCompanies = async () => {
+  onLoadCompanies = () => {
     this.loadJsonData('./assets/data/companies.json', 'companies')
   }
 
-  onLoadSkillset = async () => {
+  onLoadSkillset = () => {
     this.loadJsonData('./assets/data/skillset.json', 'skillset')
+  }
+
+  onLoadEducation = () => {
+    this.loadJsonData('./assets/data/education.json', 'education')
   }
 
   loadJsonData = async (path, key) => {
@@ -48,7 +54,6 @@ class HomeContainer extends React.Component {
   }
 
   signal = axios.CancelToken.source()
-  skillSignal = axios.CancelToken.source()
 
   render() {
     return (
@@ -57,7 +62,7 @@ class HomeContainer extends React.Component {
         <About />
         <Experience companies={this.state.companies} />
         <Skillset skillset={this.state.skillset} />
-        <Education />
+        <Education education={this.state.education}/>
       </div>
     )
   }

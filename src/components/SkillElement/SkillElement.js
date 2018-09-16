@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import Subtitle3 from '../typography/Subtitle3'
+import Subtitle from '../typography/Subtitle'
 import colours from '../../theme/colours'
 import breakpoints from '../../theme/breakpoints'
 
@@ -34,7 +34,10 @@ const SkillElement = ({ skill }) => {
 
   return (
     <SkillContainer>
-      <Subtitle3>{skill.tech}</Subtitle3>
+      <Subtitle
+        colour="primary"
+        fontSize="subtitle3"
+      >{skill.tech}</Subtitle>
       <SkillVisualContainer>
         <SkillVisualFiller />
       </SkillVisualContainer>

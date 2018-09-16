@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Subtitle2 from '../typography/Subtitle2'
+import Subtitle from '../typography/Subtitle'
 import colours from '../../theme/colours'
 
 const LastName = styled.span`
@@ -9,9 +9,12 @@ const LastName = styled.span`
 `
 
 const NameTitle = () => (
-  <Subtitle2>
+  <Subtitle
+    colour="secondary"
+    fontSize="subtitle1"
+  >
     Miguel<LastName>Ribeiro</LastName>
-  </Subtitle2>
+  </Subtitle>
 )
 
 export default NameTitle

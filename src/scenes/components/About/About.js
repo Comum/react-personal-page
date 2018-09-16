@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
 import Body1 from '../../../components/typography/Body1'
-import Subtitle1 from '../../../components/typography/Subtitle1'
+import Subtitle from '../../../components/typography/Subtitle'
 
 const TitleContainer = styled.div`
   margin-bottom: 8px;
@@ -31,7 +31,10 @@ const About = () => {
       bgColour={bgColour}
     >
       <TitleContainer>
-        <Subtitle1>MIGUEL RIBEIRO</Subtitle1>
+        <Subtitle
+          colour="primary"
+          fontSize="subtitle1"
+        >MIGUEL RIBEIRO</Subtitle>
       </TitleContainer>
       {/* eslint-disable max-len */}
       <TextContainer>

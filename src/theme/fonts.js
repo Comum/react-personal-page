@@ -1,6 +1,5 @@
 const fonts = {
-  mainFont: 'DejaVu Sans',
-  fallbackFont: 'Courier New',
+  mainFont: 'Courier New',
   sizes: {
     subtitle1: '26px',
     subtitle2: '22px',

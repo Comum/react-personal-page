@@ -16,12 +16,14 @@ class HomeContainer extends React.Component {
     companies: {},
     skillset: {},
     education: {},
+    contacts: {},
   }
 
   componentDidMount() {
     this.onLoadCompanies()
     this.onLoadSkillset()
     this.onLoadEducation()
+    this.onLoadContacts()
   }
 
   componentWillUnmount() {
@@ -38,6 +40,10 @@ class HomeContainer extends React.Component {
 
   onLoadEducation = () => {
     this.loadJsonData('./assets/data/education.json', 'education')
+  }
+
+  onLoadContacts = () => {
+    this.loadJsonData('./assets/data/contacts.json', 'contacts')
   }
 
   loadJsonData = async (path, key) => {
@@ -67,7 +73,7 @@ class HomeContainer extends React.Component {
         <Skillset skillset={this.state.skillset} />
         <Education education={this.state.education} />
         <Works />
-        <Contact />
+        <Contact contacts={this.state.contacts} />
         <Copyright />
       </div>
     )

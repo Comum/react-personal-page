@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "path": "https://www.linkedin.com/in/miguel-ribeiro-7bb32a110/",
+        "img": "assets/icons/linkedin.svg",
+        "hoverImg": "assets/icons/linkedin_colour.svg"
+    },
+    {
+        "id": 2,
+        "path": "https://github.com/Comum",
+        "img": "assets/icons/github_grey.svg",
+        "hoverImg": "assets/icons/github_black.svg"
+    }
+]

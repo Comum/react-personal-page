@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import ColourContainer from '../../../components/ColourContainer/ColourContainer'
 import NameTitle from '../../../components/NameTitle/NameTitle'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
-import Body1 from '../../../components/typography/Body1'
+import Body from '../../../components/typography/Body'
 import colours from '../../../theme/colours'
 import breakpoints from '../../../theme/breakpoints'
 
@@ -43,7 +43,12 @@ const Header = () => {
           />
         </SectionTitleWrapper>
         <TextWrapper>
-          <Body1>Specializing in converting design to code</Body1>
+          <Body
+            colour="tertiary"
+            fontSize="body1"
+          >
+            Specializing in converting design to code
+          </Body>
         </TextWrapper>
       </TextContainer>
     </ColourContainer>

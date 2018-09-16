@@ -1,29 +1,36 @@
 [
     {
+        "id": 1,
         "tech": "HTML",
         "perc": 75
     },
     {
+        "id": 2,
         "tech": "CSS",
         "perc": 85
     },
     {
+        "id": 3,
         "tech": "JavaScript",
         "perc": 70
     },
     {
+        "id": 4,
         "tech": "AngularJS",
-        "perc": 55
+        "perc": 65
     },
     {
+        "id": 5,
         "tech": "React",
         "perc": 75
     },
     {
+        "id": 6,
         "tech": "PHP",
         "perc": 65
     },
     {
+        "id": 7,
         "tech": "MySQL",
         "perc": 75
     }

@@ -3,9 +3,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import Link from '../Link/Link'
-import Body1 from '../typography/Body1'
-import Body2 from '../typography/Body2'
-import Subtitle1 from '../typography/Subtitle1'
+import Body from '../typography/Body'
+import Subtitle from '../typography/Subtitle'
 import colours from '../../theme/colours'
 
 const CompanyContainer = styled.section`
@@ -28,14 +27,27 @@ const PeriodContainer = styled.div`
 
 const CompanyElement = ({ company }) => (
   <CompanyContainer>
-    <Subtitle1 colour="secondary">
+    <Subtitle
+      colour="secondary"
+      fontSize="subtitle1"
+    >
       {company.company}
       <Link path={company.companyPage} href={company.companyPage} />
-    </Subtitle1>
+    </Subtitle>
     <PeriodContainer>
-      <Body2 colour="secondary">{company.period}</Body2>
+      <Body
+        colour="secondary"
+        fontSize="body2"
+      >
+        {company.period}
+      </Body>
     </PeriodContainer>
-    <Body1 colour="secondary">{company.title}</Body1>
+    <Body
+      colour="secondary"
+      fontSize="body1"
+    >
+      {company.title}
+    </Body>
   </CompanyContainer>
 )
 

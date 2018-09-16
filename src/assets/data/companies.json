@@ -1,34 +1,34 @@
 [
     {
         "id": 1,
+        "company": "Blip",
+        "companyPage": "https://www.blip.pt/",
+        "period": "May 2018 to present",
+        "title": "Front-end developer",
+        "volunteer": false
+    },
+    {
+        "id": 2,
+        "company": "This Place",
+        "companyPage": "https://thisplace.com/",
+        "period": "March 2017 to April 2018",
+        "title": "Front-end developer",
+        "volunteer": false
+    },
+    {
+        "id": 3,
+        "company": "MAJO",
+        "companyPage": "http://www.majo.pt/",
+        "period": "October 2014 to March 2017",
+        "title": "Web developer",
+        "volunteer": false
+    },
+    {
+        "id": 4,
         "company": "ESN Porto",
         "companyPage": "http://www.esnporto.org/",
         "period": "September 2014 to July 2015",
         "title": "IT Coordinator (Volunteer)",
         "volunteer": true
-    },
-    {
-        "id": 2,
-        "company": "MAJO",
-        "companyPage": "http://www.majo.pt/",
-        "period": "October 2014 to March 2016",
-        "title": "Web developer",
-        "volunteer": false
-    },
-    {
-        "id": 3,
-        "company": "This Place",
-        "companyPage": "https://thisplace.com/",
-        "period": "March 2016 to April 2017",
-        "title": "Front-end developer",
-        "volunteer": false
-    },
-    {
-        "id": 4,
-        "company": "Blip",
-        "companyPage": "https://www.blip.pt/",
-        "period": "May 2017 to present",
-        "title": "Front-end developer",
-        "volunteer": false
     }
 ]

@@ -2,27 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
-import CompanyElement from '../../../components/CompanyElement/CompanyElement'
+import EducationElement from '../../../components/EducationElement/EducationElement'
 
-const getCompaniesList = (companies) => {
-  if (!companies.length) {
+const getEducationList = (education) => {
+  if (!education.length) {
     return (
       <div />
     )
   }
 
-  return companies.map(company => (
-    <CompanyElement key={company.id} company={company} />
+  return education.map(course => (
+    <EducationElement key={course.id} course={course} />
   ))
 }
 
-const Experience = ({ companies }) => {
-  const title = 'EXPERIENCE'
+const Education = ({ education }) => {
+  const title = 'EDUCATION'
   const type = 'sectionTitle'
   const colour = 'secondary'
-  const iconPath = 'assets/icons/exp_icon.png'
+  const iconPath = 'assets/icons/edu_icon.png'
   const bgColour = 'primary'
-  const companiesList = getCompaniesList(companies)
+  const educationList = getEducationList(education)
 
   return (
     <SectionContainer
@@ -32,16 +32,16 @@ const Experience = ({ companies }) => {
       iconPath={iconPath}
       bgColour={bgColour}
     >
-      {companiesList}
+      {educationList}
     </SectionContainer>
   )
 }
 
-Experience.propTypes = {
-  companies: PropTypes.oneOfType([
+Education.propTypes = {
+  education: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,
   ]).isRequired,
 }
 
-export default Experience
+export default Education

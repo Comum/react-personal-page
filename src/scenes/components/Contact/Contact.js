@@ -1,11 +1,12 @@
 import React from 'react'
+
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
 
 const Contact = () => {
   const title = 'LET\'S TALTK'
   const type = 'sectionTitle'
   const colour = 'secondary'
-  const iconPath = 'assets/icons/tools_icon.png'
+  const iconPath = 'assets/icons/letter_icon.png'
   const bgColour = 'primary'
 
   return (

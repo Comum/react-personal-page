@@ -62,7 +62,7 @@ class HomeContainer extends React.Component {
         <About />
         <Experience companies={this.state.companies} />
         <Skillset skillset={this.state.skillset} />
-        <Education education={this.state.education}/>
+        <Education education={this.state.education} />
       </div>
     )
   }

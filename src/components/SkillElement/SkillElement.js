@@ -37,7 +37,9 @@ const SkillElement = ({ skill }) => {
       <Subtitle
         colour="primary"
         fontSize="subtitle3"
-      >{skill.tech}</Subtitle>
+      >
+        {skill.tech}
+      </Subtitle>
       <SkillVisualContainer>
         <SkillVisualFiller />
       </SkillVisualContainer>

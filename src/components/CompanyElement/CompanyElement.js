@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import Link from '../Link/Link'
-import Body1 from '../typography/Body1'
-import Body2 from '../typography/Body2'
+import Body from '../typography/Body'
 import Subtitle from '../typography/Subtitle'
 import colours from '../../theme/colours'
 
@@ -36,9 +35,19 @@ const CompanyElement = ({ company }) => (
       <Link path={company.companyPage} href={company.companyPage} />
     </Subtitle>
     <PeriodContainer>
-      <Body2 colour="secondary">{company.period}</Body2>
+      <Body
+        colour="secondary"
+        fontSize="body2"
+      >
+        {company.period}
+      </Body>
     </PeriodContainer>
-    <Body1 colour="secondary">{company.title}</Body1>
+    <Body
+      colour="secondary"
+      fontSize="body1"
+    >
+      {company.title}
+    </Body>
   </CompanyContainer>
 )
 

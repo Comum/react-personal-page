@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
-import Body1 from '../../../components/typography/Body1'
+import Body from '../../../components/typography/Body'
 import Subtitle from '../../../components/typography/Subtitle'
 
 const TitleContainer = styled.div`
@@ -32,16 +32,38 @@ const About = () => {
     >
       <TitleContainer>
         <Subtitle
-          colour="primary"
+          colour="tertiary"
           fontSize="subtitle1"
-        >MIGUEL RIBEIRO</Subtitle>
+        >
+          MIGUEL RIBEIRO
+        </Subtitle>
       </TitleContainer>
       {/* eslint-disable max-len */}
       <TextContainer>
-        <Body1>My name is Miguel Ribeiro (as you can imagine) and I am a web engineer.</Body1>
-        <Body1>I focus my work in replicating design as pixel perfect as can be, with the intended functionality.</Body1>
-        <Body1>Recently (for the past two years) I&apos;ve decided to focus on front-end work, so I code mostly in JavaScript (vanilla, or using frameworks such as AngularJS and React).</Body1>
-        <Body1>In another life, I used to code in PHP and do some database work as well.</Body1>
+        <Body
+          colour="tertiary"
+          fontSize="Body1"
+        >
+          My name is Miguel Ribeiro (as you can imagine) and I am a web engineer.
+        </Body>
+        <Body
+          colour="tertiary"
+          fontSize="Body1"
+        >
+          I focus my work in replicating design as pixel perfect as can be, with the intended functionality.
+        </Body>
+        <Body
+          colour="tertiary"
+          fontSize="Body1"
+        >
+          Recently (for the past two years) I&apos;ve decided to focus on front-end work, so I code mostly in JavaScript (vanilla, or using frameworks such as AngularJS and React).
+        </Body>
+        <Body
+          colour="tertiary"
+          fontSize="Body1"
+        >
+          In another life, I used to code in PHP and do some database work as well.
+        </Body>
       </TextContainer>
       {/* eslint-enable max-len */}
     </SectionContainer>

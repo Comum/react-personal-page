@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import ColourContainer from '../../../components/ColourContainer/ColourContainer'
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
-import SectionArea from '../../../components/SectionArea/SectionArea'
-import ContentContainer from '../../../components/ContentContainer/ContentContainer'
 import CompanyElement from '../../../components/CompanyElement/CompanyElement'
 
 const getCompaniesList = (companies) => {
@@ -33,8 +30,9 @@ const Experience = ({ companies }) => {
       type={type}
       colour={colour}
       iconPath={iconPath}
-      bgColour={bgColour}>
-        {companiesList}
+      bgColour={bgColour}
+    >
+      {companiesList}
     </SectionContainer>
   )
 }

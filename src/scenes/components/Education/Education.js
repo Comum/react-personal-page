@@ -1,9 +1,6 @@
 import React from 'react'
 
-import ColourContainer from '../../../components/ColourContainer/ColourContainer'
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
-import SectionArea from '../../../components/SectionArea/SectionArea'
-import ContentContainer from '../../../components/ContentContainer/ContentContainer'
 
 const Education = () => {
   const title = 'EDUCATION'
@@ -18,7 +15,8 @@ const Education = () => {
       type={type}
       colour={colour}
       iconPath={iconPath}
-      bgColour={bgColour}>
+      bgColour={bgColour}
+    >
       content
     </SectionContainer>
   )

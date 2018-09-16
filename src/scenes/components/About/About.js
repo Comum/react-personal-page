@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
-import SectionArea from '../../../components/SectionArea/SectionArea'
-import ContentContainer from '../../../components/ContentContainer/ContentContainer'
 import Body1 from '../../../components/typography/Body1'
 import Subtitle1 from '../../../components/typography/Subtitle1'
 
@@ -30,7 +28,8 @@ const About = () => {
       type={type}
       colour={colour}
       iconPath={iconPath}
-      bgColour={bgColour}>
+      bgColour={bgColour}
+    >
       <TitleContainer>
         <Subtitle1>MIGUEL RIBEIRO</Subtitle1>
       </TitleContainer>

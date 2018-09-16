@@ -7,7 +7,7 @@ import ContentContainer from '../ContentContainer/ContentContainer'
 import breakpoints from '../../theme/breakpoints'
 import colours from '../../theme/colours'
 
-const SectionContainer = props => {
+const SectionContainer = (props) => {
   const Container = styled.section`
     width: calc(100% - 200px);
     padding: 60px 100px;
@@ -43,6 +43,11 @@ const SectionContainer = props => {
 
 SectionContainer.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  colour: PropTypes.string.isRequired,
+  iconPath: PropTypes.string.isRequired,
+  bgColour: PropTypes.string.isRequired,
 }
 
 export default SectionContainer

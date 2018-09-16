@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import Subtitle3 from '../typography/Subtitle3'
 import colours from '../../theme/colours'
@@ -24,7 +25,7 @@ const SkillVisualContainer = styled.div`
   background-color: ${colours.style.primaryThin}
 `
 
-const SkillElement = ({skill}) => {
+const SkillElement = ({ skill }) => {
   const SkillVisualFiller = styled.div`
     width: ${skill.perc}%;
     height: 12px;
@@ -35,10 +36,17 @@ const SkillElement = ({skill}) => {
     <SkillContainer>
       <Subtitle3>{skill.tech}</Subtitle3>
       <SkillVisualContainer>
-        < SkillVisualFiller />
+        <SkillVisualFiller />
       </SkillVisualContainer>
     </SkillContainer>
   )
+}
+
+SkillElement.propTypes = {
+  skill: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
 }
 
 export default SkillElement

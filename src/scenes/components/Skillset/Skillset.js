@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
-import SectionArea from '../../../components/SectionArea/SectionArea'
-import ContentContainer from '../../../components/ContentContainer/ContentContainer'
 import SkillElement from '../../../components/SkillElement/SkillElement'
 import breakpoints from '../../../theme/breakpoints'
 
@@ -32,7 +31,7 @@ const getSkillsList = (skills) => {
   ))
 }
 
-const Skillset = ({skillset}) => {
+const Skillset = ({ skillset }) => {
   const title = 'SKILLSET'
   const type = 'sectionTitle'
   const colour = 'primary'
@@ -46,12 +45,20 @@ const Skillset = ({skillset}) => {
       type={type}
       colour={colour}
       iconPath={iconPath}
-      bgColour={bgColour}>
-        <SkillsetContainer>
-          {skillsList}
-        </SkillsetContainer>
-      </SectionContainer>
+      bgColour={bgColour}
+    >
+      <SkillsetContainer>
+        {skillsList}
+      </SkillsetContainer>
+    </SectionContainer>
   )
+}
+
+Skillset.propTypes = {
+  skillset: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
 }
 
 export default Skillset

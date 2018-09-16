@@ -6,7 +6,7 @@ const colours = {
     secondary: '#FEFFF8',
     tertiary: '#29241E',
     primaryFaded: '#FF8B33',
-    primaryThin: '#FFD4B3'
+    primaryThin: '#FFD4B3',
   },
 }
 

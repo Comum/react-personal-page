@@ -24,30 +24,20 @@ class HomeContainer extends React.Component {
   }
 
   onLoadCompanies = async () => {
-    try {
-      this.setState({ isLoading: true })
-      const response = await axios.get('./assets/data/companies.json', {
-        cancelToken: this.signal.token,
-      })
-
-      this.setState({ companies: response.data, isLoading: true })
-    } catch (err) {
-      if (axios.isCancel(err)) {
-        console.log('Error: ', err.message)
-      } else {
-        this.setState({ isLoading: false })
-      }
-    }
+    this.loadJsonData('./assets/data/companies.json', 'companies')
   }
 
   onLoadSkillset = async () => {
+    this.loadJsonData('./assets/data/skillset.json', 'skillset')
+  }
+
+  loadJsonData = async (path, key) => {
     try {
       this.setState({ isLoading: true })
-      const response = await axios.get('./assets/data/skillset.json', {
-        cancelToken: this.skillSignal.token,
+      const response = await axios.get(path, {
+        cancelToken: this.signal.token,
       })
-      console.log('aqui', response);
-      this.setState({ skillset: response.data, isLoading: true })
+      this.setState({ [key]: response.data, isLoading: true })
     } catch (err) {
       if (axios.isCancel(err)) {
         console.log('Error: ', err.message)
@@ -66,7 +56,7 @@ class HomeContainer extends React.Component {
         <Header />
         <About />
         <Experience companies={this.state.companies} />
-        <Skillset skillset={this.state.skillset}/>
+        <Skillset skillset={this.state.skillset} />
         <Education />
       </div>
     )

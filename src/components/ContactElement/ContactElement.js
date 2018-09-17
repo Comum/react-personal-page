@@ -1,25 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const photoOnFocusCb = (e, img) => {
+  e.currentTarget.src = img
+}
 
-// GITHUB ISSUE FOR IMGS, MAYBES NEED TO BE IMPORTED https://github.com/facebook/create-react-app/issues/3238
+const photoOnBlurCb = (e, img) => { console.log(img);
+  e.currentTarget.src = img
+}
+
 const ContactElement = ({ contact }) => {
-  const ImageContainer = styled.div`
-    background-image: url(${contact.img});
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  const ImageContainer = styled.img`
+    max-width: 50px;
+    max-height: 50px;
 
-    &:hover {
-      background-image: url(${contact.hoverImg});
-    }
+    margin-right: 20px;
   `
 
   return (
-    <div>
+    <div key={contact.id}>
       <link rel="prefetch" href={contact.hoverImg} />
       <a href={contact.path} rel="noopener noreferrer" target="_blank">
-        <ImageContainer />
+        <ImageContainer
+          src={contact.img}
+          alt="Icon"
+          onMouseOver={e => photoOnFocusCb(e, contact.hoverImg)}
+          onFocus={e => photoOnFocusCb(e, contact.hoverImg)}
+          onBlur={e => photoOnBlurCb(e, contact.img)}
+          onMouseOut={e => photoOnBlurCb(e, contact.img)}
+        />
       </a>
     </div>
   )

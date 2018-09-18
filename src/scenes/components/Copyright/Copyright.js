@@ -10,9 +10,9 @@ const CopyrightContainer = styled.div`
 `
 
 const Copyright = () => (
-    <CopyrightContainer>
-      &copy; Miguel Ribeiro, 2018
-    </CopyrightContainer>
-  )
+  <CopyrightContainer>
+    &copy; Miguel Ribeiro, 2018
+  </CopyrightContainer>
+)
 
 export default Copyright

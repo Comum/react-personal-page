@@ -1,18 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const photoOnFocusCb = (e, img) => {
   e.currentTarget.src = img
 }
 
-const photoOnBlurCb = (e, img) => { console.log(img);
+const photoOnBlurCb = (e, img) => {
   e.currentTarget.src = img
 }
 
 const ContactElement = ({ contact }) => {
   const ImageContainer = styled.img`
-    max-width: 50px;
-    max-height: 50px;
+    width: 50px;
+    height: 50px;
 
     margin-right: 20px;
   `
@@ -32,6 +33,13 @@ const ContactElement = ({ contact }) => {
       </a>
     </div>
   )
+}
+
+ContactElement.propTypes = {
+  contact: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
 }
 
 export default ContactElement

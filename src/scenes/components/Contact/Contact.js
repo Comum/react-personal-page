@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
@@ -46,7 +47,7 @@ const Contact = ({ contacts }) => {
   const bgColour = 'primary'
   const email = 'miguel.rib.20@gmail.com'
   const emailPath = `mailto:${email}`
-  const iconsList = getIconList(contacts);
+  const iconsList = getIconList(contacts)
 
   return (
     <SectionContainer
@@ -66,6 +67,13 @@ const Contact = ({ contacts }) => {
       </IconsContainer>
     </SectionContainer>
   )
+}
+
+Contact.propTypes = {
+  contacts: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
 }
 
 export default Contact

@@ -17,6 +17,7 @@ class HomeContainer extends React.Component {
     skillset: {},
     education: {},
     contacts: {},
+    quote: {},
   }
 
   componentDidMount() {
@@ -24,6 +25,7 @@ class HomeContainer extends React.Component {
     this.onLoadSkillset()
     this.onLoadEducation()
     this.onLoadContacts()
+    this.onLoadQuote()
   }
 
   componentWillUnmount() {
@@ -44,6 +46,10 @@ class HomeContainer extends React.Component {
 
   onLoadContacts = () => {
     this.loadJsonData('./assets/data/contacts.json', 'contacts')
+  }
+
+  onLoadQuote = () => {
+    this.loadJsonData('https://cors-proxy.htmldriven.com/?url=http://thoughtsoncoding.com/api/1.0/random.json', 'quote')
   }
 
   loadJsonData = async (path, key) => {
@@ -67,7 +73,7 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header quote={this.state.quote} />
         <About />
         <Experience companies={this.state.companies} />
         <Skillset skillset={this.state.skillset} />

@@ -10,8 +10,9 @@ const WorksContainer = styled.div`
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
 `
 
 const getWorksList = (works) => {

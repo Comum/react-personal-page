@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "name": "Betfair",
+        "techs": [
+            "HTML",
+            "SCSS",
+            "JavaScript",
+            "AngularJs"
+        ],
+        "img": "assets/icons/linkedin.svg",
+        "volunteer": false,
+        "description": "Description"
+    },
+    {
+        "id": 2,
+        "name": "BreakTheBlock Hackathon",
+        "techs": [
+            "HTML",
+            "SCSS",
+            "JavaScript",
+            "Angular"
+        ],
+        "img": "assets/icons/linkedin.svg",
+        "volunteer": false,
+        "description": "Description"
+    },
+    {
+        "id": 3,
+        "name": "Delhaize Responsive",
+        "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "ExpressJS",
+            "ReactJS"
+        ],
+        "img": "assets/icons/linkedin.svg",
+        "volunteer": false,
+        "description": "Description"
+    },
+    {
+        "id": 4,
+        "name": "Majo Managment Platform",
+        "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "PHP",
+            "MySQL"
+        ],
+        "img": "assets/icons/linkedin.svg",
+        "volunteer": false,
+        "description": "Description"
+    },
+    {
+        "id": 5,
+        "name": "Majo Energy Audit",
+        "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "PHP",
+            "MySQL"
+        ],
+        "img": "assets/icons/linkedin.svg",
+        "volunteer": false,
+        "description": "Description"
+    },
+    {
+        "id": 6,
+        "name": "ESN Buddy System",
+        "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "img": "assets/icons/linkedin.svg",
+        "volunteer": true,
+        "description": "Description"
+    }
+]

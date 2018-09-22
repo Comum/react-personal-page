@@ -34,7 +34,7 @@ const Works = ({ works }) => {
   const iconPath = 'assets/icons/comp_icon.png'
   const bgColour = 'secondary'
   const worksList = getWorksList(works)
-console.log(works)
+
   return (
     <SectionContainer
       title={title}

@@ -2,11 +2,11 @@ const colours = {
   bright: 'white',
   dark: '#58798c',
   style: {
-    primary: '#D05A00',
+    primary: '#02C86C',
     secondary: '#FEFFF8',
     tertiary: '#29241E',
-    primaryFaded: '#FF8B33',
-    primaryThin: '#FFD4B3',
+    primaryFaded: '#02E37A',
+    primaryThin: '#68FDB7',
   },
 }
 

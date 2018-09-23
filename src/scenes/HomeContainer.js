@@ -51,7 +51,7 @@ class HomeContainer extends React.Component {
   }
 
   onLoadQuote = () => {
-    this.loadJsonData('https://cors-proxy.htmldriven.com/?url=http://thoughtsoncoding.com/api/1.0/random.json', 'quote')
+    this.loadJsonData('https://cors.io/?http://thoughtsoncoding.com/api/1.0/random.json', 'quote')
   }
 
   onLoadWorks = () => {

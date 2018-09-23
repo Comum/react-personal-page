@@ -45,9 +45,15 @@ const Header = ({ quote }) => {
   let author = ''
 
   if (quote.body) {
+    // handle cors-proxy.htmldriven.com response
     const quoteObj = JSON.parse(quote.body)
 
     const { quote: quoteAux, author: authorAux } = quoteObj
+    quoteText = quoteAux
+    author = authorAux
+  } else if (quote.quote) {
+    //handle cors.io response
+    const { quote: quoteAux, author: authorAux } = quote
     quoteText = quoteAux
     author = authorAux
   }

@@ -30,6 +30,7 @@ const WorkImgContainer = ({ imgPath, onClick }) => (
 
 WorkImgContainer.propTypes = {
   imgPath: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 }
 
 export default WorkImgContainer

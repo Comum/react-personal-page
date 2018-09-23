@@ -1,9 +1,9 @@
 {
-  "name": "react-bootstrap",
+  "name": "react-personal-page",
   "version": "1.0.0",
-  "description": "A simple bootstrap for react web apps",
+  "description": "A react static page",
   "main": "index.js",
-  "author": "orenciorodolfo",
+  "author": "Miguel Ribeiro",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",

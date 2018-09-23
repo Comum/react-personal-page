@@ -6,7 +6,7 @@ import WorkImgContainer from '../WorkImgContainer/WorkImgContainer'
 import WorkTechList from '../WorkTechList/WorkTechList'
 import Subtitle from '../typography/Subtitle'
 import breakpoints from '../../theme/breakpoints'
-import Body from '../typography/Body';
+import Body from '../typography/Body'
 
 const WorkContainer = styled.section`
   width: 100%;

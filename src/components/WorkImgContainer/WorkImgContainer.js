@@ -18,9 +18,13 @@ const ImgElement = styled.img`
   border-radius: 5px;
 `
 
-const WorkImgContainer = ({ imgPath }) => (
+const WorkImgContainer = ({ imgPath, onClick }) => (
   <ImgContainer>
-    <ImgElement src={imgPath} alt="" />
+    <ImgElement
+      src={imgPath}
+      alt=""
+      onClick={onClick}
+    />
   </ImgContainer>
 )
 

@@ -9,6 +9,7 @@ const fonts = {
     sectionTitle: '26px',
     body1: '20px',
     body2: '18px',
+    body3: '14px',
     copyright: '14px',
     small: {
       mainTitle: '40px',

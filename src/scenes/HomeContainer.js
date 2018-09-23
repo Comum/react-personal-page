@@ -6,6 +6,9 @@ import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Skillset from './components/Skillset/Skillset'
 import Education from './components/Education/Education'
+import Works from './components/Works/Works'
+import Contact from './components/Contact/Contact'
+import Copyright from './components/Copyright/Copyright'
 
 class HomeContainer extends React.Component {
   state = {
@@ -13,12 +16,18 @@ class HomeContainer extends React.Component {
     companies: {},
     skillset: {},
     education: {},
+    contacts: {},
+    quote: {},
+    works: {},
   }
 
   componentDidMount() {
     this.onLoadCompanies()
     this.onLoadSkillset()
     this.onLoadEducation()
+    this.onLoadContacts()
+    this.onLoadQuote()
+    this.onLoadWorks()
   }
 
   componentWillUnmount() {
@@ -35,6 +44,18 @@ class HomeContainer extends React.Component {
 
   onLoadEducation = () => {
     this.loadJsonData('./assets/data/education.json', 'education')
+  }
+
+  onLoadContacts = () => {
+    this.loadJsonData('./assets/data/contacts.json', 'contacts')
+  }
+
+  onLoadQuote = () => {
+    this.loadJsonData('https://cors.io/?http://thoughtsoncoding.com/api/1.0/random.json', 'quote')
+  }
+
+  onLoadWorks = () => {
+    this.loadJsonData('./assets/data/works.json', 'works')
   }
 
   loadJsonData = async (path, key) => {
@@ -58,11 +79,14 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header quote={this.state.quote} />
         <About />
         <Experience companies={this.state.companies} />
         <Skillset skillset={this.state.skillset} />
         <Education education={this.state.education} />
+        <Works works={this.state.works} />
+        <Contact contacts={this.state.contacts} />
+        <Copyright />
       </div>
     )
   }

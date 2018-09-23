@@ -52,7 +52,7 @@ const Header = ({ quote }) => {
     quoteText = quoteAux
     author = authorAux
   } else if (quote.quote) {
-    //handle cors.io response
+    // handle cors.io response
     const { quote: quoteAux, author: authorAux } = quote
     quoteText = quoteAux
     author = authorAux

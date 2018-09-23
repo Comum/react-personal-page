@@ -3,12 +3,24 @@
         "id": 1,
         "name": "Betfair",
         "techs": [
-            "HTML",
-            "SCSS",
-            "JavaScript",
-            "AngularJs"
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "SCSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            },
+            {
+                "id": 4,
+                "name": "AngularJs"
+            }
         ],
-        "img": "assets/icons/linkedin.svg",
+        "img": "/assets/img/betfair.png",
         "volunteer": false,
         "description": "Description"
     },
@@ -16,12 +28,24 @@
         "id": 2,
         "name": "BreakTheBlock Hackathon",
         "techs": [
-            "HTML",
-            "SCSS",
-            "JavaScript",
-            "Angular"
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "SCSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            },
+            {
+                "id": 4,
+                "name": "Angular"
+            }
         ],
-        "img": "assets/icons/linkedin.svg",
+        "img": "/assets/img/breaktheblock.png",
         "volunteer": false,
         "description": "Description"
     },
@@ -29,14 +53,32 @@
         "id": 3,
         "name": "Delhaize Responsive",
         "techs": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "ExpressJS",
-            "ReactJS"
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "CSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            },
+            {
+                "id": 4,
+                "name": "jQuery"
+            },
+            {
+                "id": 5,
+                "name": "ReactJS"
+            },
+            {
+                "id": 6,
+                "name": "ExpressJS"
+            }
         ],
-        "img": "assets/icons/linkedin.svg",
+        "img": "/assets/img/delhaize.png",
         "volunteer": false,
         "description": "Description"
     },
@@ -44,14 +86,32 @@
         "id": 4,
         "name": "Majo Managment Platform",
         "techs": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "PHP",
-            "MySQL"
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "CSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            },
+            {
+                "id": 4,
+                "name": "jQuery"
+            },
+            {
+                "id": 5,
+                "name": "PHP"
+            },
+            {
+                "id": 6,
+                "name": "MySQL"
+            }
         ],
-        "img": "assets/icons/linkedin.svg",
+        "img": "/assets/img/noImageFound.png",
         "volunteer": false,
         "description": "Description"
     },
@@ -59,14 +119,32 @@
         "id": 5,
         "name": "Majo Energy Audit",
         "techs": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "PHP",
-            "MySQL"
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "CSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            },
+            {
+                "id": 4,
+                "name": "jQuery"
+            },
+            {
+                "id": 5,
+                "name": "PHP"
+            },
+            {
+                "id": 6,
+                "name": "MySQL"
+            }
         ],
-        "img": "assets/icons/linkedin.svg",
+        "img": "/assets/img/majoEnergyuAudit.png",
         "volunteer": false,
         "description": "Description"
     },
@@ -74,11 +152,20 @@
         "id": 6,
         "name": "ESN Buddy System",
         "techs": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "CSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            }
         ],
-        "img": "assets/icons/linkedin.svg",
+        "img": "/assets/img/buddySystem.png",
         "volunteer": true,
         "description": "Description"
     }

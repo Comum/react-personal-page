@@ -49,12 +49,12 @@ const Header = ({ quote }) => {
     const quoteObj = JSON.parse(quote.body)
 
     const { quote: quoteAux, author: authorAux } = quoteObj
-    quoteText = quoteAux
+    quoteText = `"${quoteAux}"`
     author = authorAux
   } else if (quote.quote) {
     // handle cors.io response
     const { quote: quoteAux, author: authorAux } = quote
-    quoteText = quoteAux
+    quoteText = `"${quoteAux}"`
     author = authorAux
   }
 

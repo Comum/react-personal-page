@@ -40,7 +40,7 @@ const getIconList = (contacts) => {
 }
 
 const Contact = ({ contacts }) => {
-  const title = 'LET\'S TALTK'
+  const title = 'LET\'S TALK'
   const type = 'sectionTitle'
   const colour = 'secondary'
   const iconPath = 'assets/icons/letter_icon.png'

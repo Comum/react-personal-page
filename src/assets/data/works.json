@@ -26,6 +26,35 @@
     },
     {
         "id": 2,
+        "name": "WebMadeira",
+        "techs": [
+            {
+                "id": 1,
+                "name": "HTML"
+            },
+            {
+                "id": 2,
+                "name": "SCSS"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript"
+            },
+            {
+                "id": 4,
+                "name": "ReactJS"
+            },
+            {
+                "id": 4,
+                "name": "Redux"
+            }
+        ],
+        "img": "/assets/img/webmadeira.png",
+        "volunteer": false,
+        "description": "Front end work for the conference's pwa"
+    },
+    {
+        "id": 2,
         "name": "BreakTheBlock Hackathon",
         "techs": [
             {

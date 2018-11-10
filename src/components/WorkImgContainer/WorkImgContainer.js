@@ -18,19 +18,17 @@ const ImgElement = styled.img`
   border-radius: 5px;
 `
 
-const WorkImgContainer = ({ imgPath, onClick }) => (
+const WorkImgContainer = ({ imgPath }) => (
   <ImgContainer>
     <ImgElement
       src={imgPath}
       alt=""
-      onClick={onClick}
     />
   </ImgContainer>
 )
 
 WorkImgContainer.propTypes = {
   imgPath: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
 }
 
 export default WorkImgContainer

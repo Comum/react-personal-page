@@ -3,14 +3,12 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import WorkImgContainer from '../WorkImgContainer/WorkImgContainer'
-import WorkTechList from '../WorkTechList/WorkTechList'
 import Subtitle from '../typography/Subtitle'
 import breakpoints from '../../theme/breakpoints'
-import Body from '../typography/Body'
 
 const WorkContainer = styled.section`
   width: 100%;
-  margin: 0 0 60px 0;
+  margin: 0 0 40px 0;
 
   @media (min-width: ${breakpoints.large}) {
     width: calc(50% - 30px);
@@ -21,47 +19,28 @@ const WorkContainer = styled.section`
   }
 `
 
-class WorkElement extends React.Component {
-  state = {
-    showDesc: false,
-  }
+const WorkTitleContainer = styled.div`
+  margin-bottom: 20px;
+`
 
-  handleClick = () => {
-    this.setState({
-      showDesc: !this.state.showDesc,
-    })
-  }
+const WorkElement = ({ work }) => {
+  const imgPath = work.img ? work.img : ''
 
-  render() {
-    const { work } = this.props
-    const imgPath = work.img ? work.img : ''
-    const techs = work.techs ? work.techs : []
-
-    return (
-      <WorkContainer>
-        <WorkImgContainer
-          imgPath={imgPath}
-          onClick={this.handleClick}
-        />
+  return (
+    <WorkContainer>
+      <WorkTitleContainer>
         <Subtitle
           colour="primary"
           fontSize="subtitle3"
         >
           {work.name}
         </Subtitle>
-        {this.state.showDesc &&
-          <Body
-            colour="primary"
-            fontSize="body3"
-            marginTop="20px"
-          >
-            {work.description}
-          </Body>
-        }
-        <WorkTechList techs={techs} />
-      </WorkContainer>
-    )
-  }
+      </WorkTitleContainer>
+      <WorkImgContainer
+        imgPath={imgPath}
+      />
+    </WorkContainer>
+  )
 }
 
 WorkElement.propTypes = {

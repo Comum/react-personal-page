@@ -14,4 +14,4 @@ This is a webpage about myself. A small react pdf page that shows a little bit a
 
 ## Aditional info
 
-Even though this page consumes an API - [Thoughts on coding](http://thoughtsoncoding.com/api), I didn't think that having redux to control state would be necessary, it would be like kill an ant with a canon, so I kept with react state.
+Even though this page consumes an API - [Thoughts on coding](http://thoughtsoncoding.com/api), I didn't think that having redux to control state would be necessary, it would be like using a canon to kill an ant, so I kept with react state.

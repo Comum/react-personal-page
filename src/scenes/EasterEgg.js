@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import RocketMan from '../components/RocketMan/RocketMan'
 import Body from '../components/typography/Body'
 import fonts from '../theme/fonts'
 import colours from '../theme/colours'
@@ -29,6 +30,7 @@ const EasterEgg = () => (
             <Body colour="tertiary">
                 Nothing to see here though
             </Body>
+            <RocketMan />
         </BodyContainer>
     </div>
 )

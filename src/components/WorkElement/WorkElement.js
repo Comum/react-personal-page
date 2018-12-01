@@ -25,6 +25,7 @@ const WorkTitleContainer = styled.div`
 
 const WorkElement = ({ work }) => {
   const imgPath = work.img ? work.img : ''
+  const id = work.id ? work.id : 0
 
   return (
     <WorkContainer>
@@ -37,6 +38,7 @@ const WorkElement = ({ work }) => {
         </Subtitle>
       </WorkTitleContainer>
       <WorkImgContainer
+        id={id}
         imgPath={imgPath}
       />
     </WorkContainer>

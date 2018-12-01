@@ -10,6 +10,33 @@ import Works from './components/Works/Works'
 import Contact from './components/Contact/Contact'
 import Copyright from './components/Copyright/Copyright'
 
+const dataList = [
+  {
+    path: './assets/data/companies.json',
+    section: 'companies',
+  },
+  {
+    path: './assets/data/skillset.json',
+    section: 'skillset',
+  },
+  {
+    path: './assets/data/education.json',
+    section: 'education',
+  },
+  {
+    path: './assets/data/contacts.json',
+    section: 'contacts',
+  },
+  {
+    path: 'https://cors.io/?http://thoughtsoncoding.com/api/1.0/random.json',
+    section: 'quote',
+  },
+  {
+    path: './assets/data/works.json',
+    section: 'works',
+  },
+]
+
 class HomeContainer extends React.Component {
   state = {
     isLoading: false,
@@ -22,40 +49,9 @@ class HomeContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.onLoadCompanies()
-    this.onLoadSkillset()
-    this.onLoadEducation()
-    this.onLoadContacts()
-    this.onLoadQuote()
-    this.onLoadWorks()
-  }
-
-  componentWillUnmount() {
-    this.signal.cancel('Api is being canceled')
-  }
-
-  onLoadCompanies = () => {
-    this.loadJsonData('./assets/data/companies.json', 'companies')
-  }
-
-  onLoadSkillset = () => {
-    this.loadJsonData('./assets/data/skillset.json', 'skillset')
-  }
-
-  onLoadEducation = () => {
-    this.loadJsonData('./assets/data/education.json', 'education')
-  }
-
-  onLoadContacts = () => {
-    this.loadJsonData('./assets/data/contacts.json', 'contacts')
-  }
-
-  onLoadQuote = () => {
-    this.loadJsonData('https://cors.io/?http://thoughtsoncoding.com/api/1.0/random.json', 'quote')
-  }
-
-  onLoadWorks = () => {
-    this.loadJsonData('./assets/data/works.json', 'works')
+    dataList.forEach(entry => {
+      this.loadJsonData(entry.path, entry.section)
+    })
   }
 
   loadJsonData = async (path, key) => {

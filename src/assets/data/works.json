@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Betfair",
+        "company": "Blip.pt",
         "techs": [
             {
                 "id": 1,
@@ -22,11 +23,14 @@
         ],
         "img": "/assets/img/betfair.png",
         "volunteer": false,
-        "description": "Front end work for the mobile app for betfair.com"
+        "description": "Front end work for the mobile app for betfair.com",
+        "link": "https://www.betfair.com/",
+        "unavailableLink": false
     },
     {
         "id": 2,
         "name": "WebMadeira",
+        "company": "WebMadeira",
         "techs": [
             {
                 "id": 1,
@@ -51,11 +55,14 @@
         ],
         "img": "/assets/img/webmadeira.png",
         "volunteer": false,
-        "description": "Front end work for the conference's pwa"
+        "description": "Front end work for the conference's pwa",
+        "link": "https://webmadeira.org/",
+        "unavailableLink": false
     },
     {
         "id": 3,
         "name": "BreakTheBlock Hackathon",
+        "company": "Hackathon event",
         "techs": [
             {
                 "id": 1,
@@ -76,11 +83,14 @@
         ],
         "img": "/assets/img/breaktheblock.png",
         "volunteer": false,
-        "description": "#breaktheblock Hackathon was an event created by Simply Business that challenged the participants to create a solution for insurance using blockchain. More information at: Simply Business  Our team presented an insurance solution that allowed to insure an event against weather misfortune, but the person that applied to this insurance could only claim his or her prize if he or she were present at the place of the event. We also had a Raspberry Pi that simulated a node in a network of sensors that would detect weather misfortune, such as rain, for example. The user would also be notified by text message with a link to check his or her current location to make sure a claim is possible."
+        "description": "#breaktheblock Hackathon was an event created by Simply Business that challenged the participants to create a solution for insurance using blockchain. More information at: Simply Business  Our team presented an insurance solution that allowed to insure an event against weather misfortune, but the person that applied to this insurance could only claim his or her prize if he or she were present at the place of the event. We also had a Raspberry Pi that simulated a node in a network of sensors that would detect weather misfortune, such as rain, for example. The user would also be notified by text message with a link to check his or her current location to make sure a claim is possible.",
+        "link": "unavailable",
+        "unavailableLink": true
     },
     {
         "id": 4,
         "name": "Delhaize Responsive",
+        "company": "This Place",
         "techs": [
             {
                 "id": 1,
@@ -109,11 +119,14 @@
         ],
         "img": "/assets/img/delhaize.png",
         "volunteer": false,
-        "description": "Front end work on the web store for the supermarket chain Delhaize."
+        "description": "Front end work on the web store for the supermarket chain Delhaize.",
+        "link": "https://www.delhaize.be/",
+        "unavailableLink": false
     },
     {
         "id": 5,
         "name": "Majo Managment Platform",
+        "company": "Majo",
         "techs": [
             {
                 "id": 1,
@@ -142,7 +155,9 @@
         ],
         "img": "/assets/img/noImageFound.png",
         "volunteer": false,
-        "description": "Majo Managment Platform is a managment tool to help users receive tasks and manage projects. It is based in Trello and its work flow is based on MAJO's way of working."
+        "description": "Majo Managment Platform is a managment tool to help users receive tasks and manage projects. It is based in Trello and its work flow is based on MAJO's way of working.",
+        "link": "unavailable",
+        "unavailableLink": true
     },
     {
         "id": 6,
@@ -175,7 +190,9 @@
         ],
         "img": "/assets/img/majoEnergyuAudit.png",
         "volunteer": false,
-        "description": "Majo Energy Audit is a managment platform that allows users to convert energy values into monetary values. In a first instance it was working to convert energy produced by mini hydric centrals."
+        "description": "Majo Energy Audit is a managment platform that allows users to convert energy values into monetary values. In a first instance it was working to convert energy produced by mini hydric centrals.",
+        "link": "unavailable",
+        "unavailableLink": true
     },
     {
         "id": 7,
@@ -196,6 +213,8 @@
         ],
         "img": "/assets/img/buddySystem.png",
         "volunteer": true,
-        "description": "Buddy System is a Web App that connects two app members with each other and sends an email to each of them with information about the other user. It requires an user to make the attribution (non automonous attribution was part of the specs)"
+        "description": "Buddy System is a Web App that connects two app members with each other and sends an email to each of them with information about the other user. It requires an user to make the attribution (non automonous attribution was part of the specs)",
+        "link": "unavailable",
+        "unavailableLink": true
     }
 ]

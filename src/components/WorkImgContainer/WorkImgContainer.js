@@ -18,13 +18,7 @@ const ImgElement = styled.img`
   width: 100%;
   border-radius: 5px;
 `
-/*
-  <Link to={{
-      pathname: '/works',
-      hash: '',
-      search: `?id=${id}`
-    }}>
-*/
+
 const WorkImgContainer = ({ id, imgPath }) => {
   const url = `/works/${id}`
 

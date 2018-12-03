@@ -1,6 +1,11 @@
 import React from 'react'
 import axios from 'axios'
 
+import WorksHeader from './components/WorksHeader/WorksHeader'
+import WorksImgContainer from './components/WorksImgContainer/WorksImgContainer'
+import WorksDescription from './components/WorksDescription/WorksDescription'
+import WorksTechs from './components/WorksTechs/WorksTechs'
+
 class WorksPage extends React.Component {
     state = {
         workId: this.props.match.params.id,
@@ -21,6 +26,7 @@ class WorksPage extends React.Component {
             }
         })
         .catch(function (error) {
+            // still need to find a way to handle this
             console.log(error);
         });
     }
@@ -30,7 +36,10 @@ class WorksPage extends React.Component {
 
         return (
             <div>
-                Works page {this.state.workId}
+                <WorksHeader />
+                <WorksImgContainer />
+                <WorksDescription />
+                <WorksTechs />
             </div>
         )
     }

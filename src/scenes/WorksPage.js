@@ -7,13 +7,15 @@ import WorksDescription from './components/WorksDescription/WorksDescription'
 import WorksTechs from './components/WorksTechs/WorksTechs'
 
 class WorksPage extends React.Component {
+    dataUrl = `${window.location.origin}/assets/data/works.json`
+
     state = {
         workId: this.props.match.params.id,
         project: {}
     }
 
     componentDidMount() {
-        axios.get(`${window.location.origin}/assets/data/works.json`)
+        axios.get(this.dataUrl)
         .then(response => {
             if (response.data.length) {
                 response.data.forEach(project => {

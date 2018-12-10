@@ -11,7 +11,10 @@ class WorksPage extends React.Component {
 
     state = {
         workId: this.props.match.params.id,
-        project: {}
+        project: {
+            name: '',
+            company: '',
+        }
     }
 
     componentDidMount() {
@@ -38,7 +41,7 @@ class WorksPage extends React.Component {
 
         return (
             <div>
-                <WorksHeader />
+                <WorksHeader name={this.state.project.name} company={this.state.project.company} />
                 <WorksImgContainer />
                 <WorksDescription />
                 <WorksTechs />

@@ -10,17 +10,17 @@ import Body from '../../../components/typography/Body'
 
 const SectionWrapper = styled.div`
     width: calc(100% - 200px);
-    padding: 30px 100px;
+    padding: 50px 100px;
     position: relative;
 
     @media (max-width: ${breakpoints.small}) {
-        padding: 30px 40px;
+        padding: 50px 40px;
     }
 `
 
 const TextWrapper = styled.div`
   color: ${colours.style.secondary};
-  margin: 40px 0 100px;
+  margin: 30px 0;
 `
 
 const WorksHeader = ({ name, company }) => {
@@ -28,10 +28,6 @@ const WorksHeader = ({ name, company }) => {
     const projectColour = 'secondary'
     const companyColour = 'tertiary'
     const companyFont = 'body1'
-    //const name = props.project ? props.project.name : '';
-    //const company = props.project ? props.project.company : '';
-
-    console.log('aqui', name, company)
 
     return (
         <ColourContainer>

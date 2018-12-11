@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import ColourContainer from '../../../components/ColourContainer/ColourContainer'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
@@ -23,11 +24,23 @@ const TextWrapper = styled.div`
   margin: 30px 0;
 `
 
+const ImageContainer = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  &:hover {
+      cursor: pointer;
+      border-bottom: 3px solid black;
+  }
+`
+
 const WorksHeader = ({ name, company }) => {
     const type = 'mainTitle'
     const projectColour = 'secondary'
     const companyColour = 'tertiary'
     const companyFont = 'body1'
+    const iconPath = '../assets/icons/home_icon.png'
 
     return (
         <ColourContainer>
@@ -45,6 +58,11 @@ const WorksHeader = ({ name, company }) => {
                         {company}
                     </Body>
                 </TextWrapper>
+                <Link to="/">
+                    <ImageContainer>
+                        <img src={iconPath} alt="" />
+                    </ImageContainer>
+                </Link>
             </SectionWrapper>
         </ColourContainer>
     )

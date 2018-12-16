@@ -43,8 +43,8 @@ class WorksPage extends React.Component {
             <div>
                 <WorksHeader name={this.state.project.name} company={this.state.project.company} />
                 <WorksImgContainer />
-                <WorksDescription description={this.state.project.description}/>
-                <WorksTechs />
+                <WorksDescription description={this.state.project.description} />
+                <WorksTechs techs={this.state.project.techs} />
             </div>
         )
     }

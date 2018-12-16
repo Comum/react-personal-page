@@ -12,7 +12,6 @@ import Body from '../../../components/typography/Body'
 const SectionWrapper = styled.div`
     width: calc(100% - 200px);
     padding: 50px 100px;
-    position: relative;
 
     @media (max-width: ${breakpoints.small}) {
         padding: 50px 40px;
@@ -22,6 +21,10 @@ const SectionWrapper = styled.div`
 const TextWrapper = styled.div`
   color: ${colours.style.secondary};
   margin: 30px 0;
+`
+
+const CompanyWrapper = styled.div`
+    color: ${colours.style.secondary};
 `
 
 const ImageContainer = styled.div`
@@ -55,7 +58,9 @@ const WorksHeader = ({ name, company }) => {
                         colour={companyColour}
                         fontSize={companyFont}
                     >
-                        {company}
+                        <CompanyWrapper>
+                            > {company}
+                        </CompanyWrapper>
                     </Body>
                 </TextWrapper>
                 <Link to="/">

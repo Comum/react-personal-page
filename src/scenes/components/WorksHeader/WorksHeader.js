@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import ColourContainer from '../../../components/ColourContainer/ColourContainer'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
+import UrlWrapper from '../../../components/UrlWrapper/UrlWrapper'
 import colours from '../../../theme/colours'
 import breakpoints from '../../../theme/breakpoints'
 import Body from '../../../components/typography/Body'
@@ -38,12 +39,34 @@ const ImageContainer = styled.div`
   }
 `
 
-const WorksHeader = ({ name, company }) => {
+const handleCompanyElement = (company, companyUrl) => {
+    if (companyUrl === 'unavailable') {
+        return (
+            <CompanyWrapper>
+                {company}
+            </CompanyWrapper>
+        )
+    }
+
+    return (
+        <CompanyWrapper>
+            <UrlWrapper
+                url={companyUrl}
+                name={company}
+                preName=">"
+                textColor="secondary"
+            />
+        </CompanyWrapper>
+    )
+}
+
+const WorksHeader = ({ name, company, companyUrl }) => {
     const type = 'mainTitle'
     const projectColour = 'secondary'
     const companyColour = 'tertiary'
     const companyFont = 'body1'
     const iconPath = '../assets/icons/home_icon.png'
+    const companyElement = handleCompanyElement(company, companyUrl)
 
     return (
         <ColourContainer>
@@ -58,9 +81,7 @@ const WorksHeader = ({ name, company }) => {
                         colour={companyColour}
                         fontSize={companyFont}
                     >
-                        <CompanyWrapper>
-                            > {company}
-                        </CompanyWrapper>
+                        {companyElement}
                     </Body>
                 </TextWrapper>
                 <Link to="/">

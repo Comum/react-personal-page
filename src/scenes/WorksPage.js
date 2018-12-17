@@ -41,9 +41,9 @@ class WorksPage extends React.Component {
 
         return (
             <div>
-                <WorksHeader name={this.state.project.name} company={this.state.project.company} />
-                <WorksImgContainer />
-                <WorksDescription description={this.state.project.description} />
+                <WorksHeader name={this.state.project.name} company={this.state.project.company} companyUrl={this.state.project.companyUrl} />
+                <WorksImgContainer imgPath={this.state.project.img} />
+                <WorksDescription description={this.state.project.description} name={this.state.project.name} url={this.state.project.link} />
                 <WorksTechs techs={this.state.project.techs} />
             </div>
         )

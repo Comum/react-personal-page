@@ -5,8 +5,7 @@ import colours from '../../../theme/colours'
 import SectionContainer from '../../../components/SectionContainer/SectionContainer'
 
 const TechContainer = styled.div`
-    margin-top: 10px;
-
+    padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -15,7 +14,7 @@ const TechContainer = styled.div`
 
 const TechElement = styled.div`
     padding: 8px 10px;
-    margin: 10px 10px 0 0;
+    margin-right: 10px;
 
     border-radius: 5px;
     border: 1px solid ${colours.style.secondary};

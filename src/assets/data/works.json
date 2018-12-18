@@ -158,7 +158,7 @@
                 "name": "MySQL"
             }
         ],
-        "img": "/assets/img/noImageFound.png",
+        "img": "/assets/img/placeholder.jpg",
         "volunteer": false,
         "description": "Majo Managment Platform is a managment tool to help users receive tasks and manage projects. It is based in Trello and its work flow is based on MAJO's way of working.",
         "link": "unavailable",

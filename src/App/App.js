@@ -1,5 +1,4 @@
 import React from 'react'
-import { Provider } from 'react-redux'
 import PropTypes from 'prop-types'
 import { BrowserRouter, Route } from 'react-router-dom'
 
@@ -8,16 +7,14 @@ import HomeContainer from '../scenes/HomeContainer'
 import EaterEgg from '../scenes/EasterEgg'
 import WorksPage from '../scenes/WorksPage'
 
-const App = props => (
-  <Provider store={props.store}>
-    <BrowserRouter>
-      <div>
-        <Route path="/works/:id" component={WorksPage} />
-        <Route path="/easteregg" component={EaterEgg} />
-        <Route path="/" exact component={HomeContainer} />
-      </div>
-    </BrowserRouter>
-  </Provider>
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <Route path="/works/:id" component={WorksPage} />
+      <Route path="/easteregg" component={EaterEgg} />
+      <Route path="/" exact component={HomeContainer} />
+    </div>
+  </BrowserRouter>
 )
 
 App.propTypes = {

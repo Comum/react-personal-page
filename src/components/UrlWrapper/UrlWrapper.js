@@ -29,4 +29,11 @@ const UrlWrapper = ({
     )
 }
 
+UrlWrapper.propTypes = {
+    url: PropTypes.string,
+    name: PropTypes.string,
+    preName: PropTypes.string,
+    textColor: PropTypes.string,
+}
+
 export default UrlWrapper

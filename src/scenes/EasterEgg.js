@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import RocketMan from '../components/RocketMan/RocketMan'
 import Body from '../components/typography/Body'
 import fonts from '../theme/fonts'
-import colours from '../theme/colours'
 
 const TitleContainer = styled.div`
     width: 100%;

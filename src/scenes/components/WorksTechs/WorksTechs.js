@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import colours from '../../../theme/colours'
@@ -56,6 +57,13 @@ const WorksTechs = ({ techs }) => {
             </TechContainer>
       </SectionContainer>
     )
+}
+
+WorksTechs.propTypes = {
+    techs: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.object,
+    ]),
 }
 
 export default WorksTechs

@@ -26,4 +26,8 @@ const WorksImgContainer = ({ imgPath }) => (
     </ImgContainer>
 )
 
+WorksImgContainer.propTypes = {
+    imgPath: PropTypes.string,
+}
+
 export default WorksImgContainer

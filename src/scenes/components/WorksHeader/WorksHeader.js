@@ -94,4 +94,10 @@ const WorksHeader = ({ name, company, companyUrl }) => {
     )
 }
 
+WorksHeader.propTypes = {
+    name: PropTypes.string,
+    company: PropTypes.string,
+    companyUrl: PropTypes.string,
+}
+
 export default WorksHeader

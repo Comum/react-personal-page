@@ -2,7 +2,7 @@
 
 ## Main
 
-This is a webpage about myself. A small react pdf page that shows a little bit about my skills.
+This is a webpage about myself. A small react pdf page that shows a little bit about my dev skills and my lack of design skills.
 
 ## Commands
  - `npm start` - starts the application

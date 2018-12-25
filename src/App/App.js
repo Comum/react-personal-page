@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 import './global-styles'
@@ -16,9 +15,5 @@ const App = () => (
     </div>
   </BrowserRouter>
 )
-
-App.propTypes = {
-  store: PropTypes.shape().isRequired,
-}
 
 export default App

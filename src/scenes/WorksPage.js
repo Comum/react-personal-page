@@ -37,8 +37,6 @@ class WorksPage extends React.Component {
     }
 
     render() {
-        console.log(this.state);
-
         return (
             <div>
                 <WorksHeader name={this.state.project.name} company={this.state.project.company} companyUrl={this.state.project.companyUrl} />

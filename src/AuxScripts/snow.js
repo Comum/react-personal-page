@@ -35,10 +35,8 @@ class Snowflake {
 
 class Snow {
     constructor() {
-        this.canvas = document.createElement("canvas");
+        this.canvas = document.querySelector("canvas");
         this.ctx = this.canvas.getContext("2d");
-
-        document.body.appendChild(this.canvas);
 
         window.addEventListener("resize", this.onResize.bind(this));
         this.onResize();
@@ -50,6 +48,7 @@ class Snow {
     }
 
     onResize() {
+        console.log(this.canvas);
         this.width = window.innerWidth;
         this.height = window.innerHeight;
         this.canvas.width = this.width;

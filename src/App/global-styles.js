@@ -24,6 +24,8 @@ injectGlobal`
       height: 100%;
 
       position: absolute;
+
+      z-index: 10;
     }
 
     .RocketManContainer {

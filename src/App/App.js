@@ -6,6 +6,7 @@ import './global-styles'
 import HomeContainer from '../scenes/HomeContainer'
 import EaterEgg from '../scenes/EasterEgg'
 import WorksPage from '../scenes/WorksPage'
+import Snowflakes from '../components/Snowflakes/Snowflakes'
 
 const AppContainer = styled.div`
     width: 100%;
@@ -26,7 +27,7 @@ const isItWinterTime = () => {
 const App = () => (
   <AppContainer>
     {isItWinterTime() &&
-      <div>hello</div>
+      <Snowflakes />
     }
     <BrowserRouter>
       <div>

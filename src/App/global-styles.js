@@ -14,6 +14,18 @@ injectGlobal`
         font-family: ${fonts.mainFont}, ${fonts.fallbackFont};
     }
 
+    #root {
+      width: 100%;
+      height: 100%;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+    }
+
     .RocketManContainer {
         width: 100%;
         height: 350px;

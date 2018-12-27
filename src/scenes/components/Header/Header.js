@@ -61,7 +61,7 @@ const Header = ({ quote }) => {
   }
 
   return (
-    <ColourContainer>
+    <ColourContainer className="cenas">
       {isItWinterTime() &&
         <Snowflakes />
       }

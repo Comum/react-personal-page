@@ -76,7 +76,7 @@ const WorksHeader = ({ name, company, companyUrl }) => {
     const companyElement = handleCompanyElement(company, companyUrl)
 
     return (
-        <ColourContainer>
+        <ColourContainer className="cenas">
             {isItWinterTime() &&
                 <Snowflakes />
             }

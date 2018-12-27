@@ -9,6 +9,8 @@ import UrlWrapper from '../../../components/UrlWrapper/UrlWrapper'
 import colours from '../../../theme/colours'
 import breakpoints from '../../../theme/breakpoints'
 import Body from '../../../components/typography/Body'
+import Snowflakes from '../../../components/Snowflakes/Snowflakes'
+import { isItWinterTime } from '../../../AuxScripts/utils'
 
 const SectionWrapper = styled.div`
     width: calc(100% - 200px);
@@ -22,6 +24,9 @@ const SectionWrapper = styled.div`
 const TextWrapper = styled.div`
   color: ${colours.style.secondary};
   margin: 30px 0;
+
+  position: relative;
+  z-index: 15;
 `
 
 const CompanyWrapper = styled.div`
@@ -32,6 +37,8 @@ const ImageContainer = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+
+  z-index: 15;
 
   &:hover {
       cursor: pointer;
@@ -70,6 +77,9 @@ const WorksHeader = ({ name, company, companyUrl }) => {
 
     return (
         <ColourContainer>
+            {isItWinterTime() &&
+                <Snowflakes />
+            }
             <SectionWrapper>
                 <SectionTitle
                     title={name}

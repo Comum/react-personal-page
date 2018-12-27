@@ -9,6 +9,8 @@ import Body from '../../../components/typography/Body'
 import fonts from '../../../theme/fonts'
 import colours from '../../../theme/colours'
 import breakpoints from '../../../theme/breakpoints'
+import Snowflakes from '../../../components/Snowflakes/Snowflakes'
+import { isItWinterTime } from '../../../AuxScripts/utils'
 
 const TextContainer = styled.div`
   width: calc(100% - 200px);
@@ -59,7 +61,10 @@ const Header = ({ quote }) => {
   }
 
   return (
-    <ColourContainer>
+    <ColourContainer className="cenas">
+      {isItWinterTime() &&
+        <Snowflakes />
+      }
       <TextContainer>
         <NameTitle />
         <SectionTitleWrapper>

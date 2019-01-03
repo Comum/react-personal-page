@@ -6,6 +6,7 @@ import colours from '../../theme/colours'
 
 const Container = styled.section`
   background-color: ${colours.style.primary};
+  position: relative;
 `
 
 const ColourContainer = props => (

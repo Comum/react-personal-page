@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const ImgContainer = styled.div`
   width: 100%;
@@ -18,19 +19,24 @@ const ImgElement = styled.img`
   border-radius: 5px;
 `
 
-const WorkImgContainer = ({ imgPath, onClick }) => (
-  <ImgContainer>
-    <ImgElement
-      src={imgPath}
-      alt=""
-      onClick={onClick}
-    />
-  </ImgContainer>
-)
+const WorkImgContainer = ({ id, imgPath }) => {
+  const url = `/works/${id}`
+
+  return (
+    <ImgContainer>
+      <Link to={url}>
+        <ImgElement
+          src={imgPath}
+          alt=""
+        />
+      </Link>
+    </ImgContainer>
+  )
+}
 
 WorkImgContainer.propTypes = {
+  id: PropTypes.number.isRequired,
   imgPath: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
 }
 
 export default WorkImgContainer

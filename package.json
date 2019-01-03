@@ -59,7 +59,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "deploy:surge": "npm run build && surge -p build --domain comum.surge.sh"
   },
   "eslintConfig": {
     "extends": "react-app"

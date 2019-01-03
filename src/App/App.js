@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
 import './global-styles'
@@ -14,13 +14,13 @@ const AppContainer = styled.div`
 
 const App = () => (
   <AppContainer>
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Route path="/works/:id" component={WorksPage} />
         <Route path="/easteregg" component={EaterEgg} />
         <Route path="/" exact component={HomeContainer} />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   </AppContainer>
 )
 

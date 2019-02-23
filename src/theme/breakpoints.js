@@ -1,6 +1,7 @@
 const breakpoints = {
-  small: '767px',
-  large: '1200px',
-}
+	extraSmall: '492px',
+	small: '767px',
+	large: '1200px',
+};
 
-export default breakpoints
+export default breakpoints;

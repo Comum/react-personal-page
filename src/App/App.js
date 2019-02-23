@@ -14,15 +14,20 @@ const AppContainer = styled.div`
 	height: 100%;
 `;
 
+const RoutesContainer = styled.div`
+	width: 100%;
+	height: 100%;
+`;
+
 const App = () => (
 	<AppContainer>
 		<HashRouter>
-			<div>
+			<RoutesContainer>
 				<Route path="/works/:id" component={WorksPage} />
 				<Route path="/easteregg" component={EaterEgg} />
 				<Route path="/styleguide" component={StyleGuide} />
 				<Route path="/" exact component={HomeContainer} />
-			</div>
+			</RoutesContainer>
 		</HashRouter>
 	</AppContainer>
 );

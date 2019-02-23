@@ -3,6 +3,27 @@ import styled from 'styled-components';
 
 import breakpoints from '../theme/breakpoints';
 import StyleContent from './styleguide/StyleContent';
+import SideMenu from './styleguide/SideMenu';
+
+const StyleGuideMainWrapper = styled.section`
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+`;
+
+const StyleGuideContentWrapper = styled.div`
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	@media (max-width: ${breakpoints.small}) {
+		height: calc(100% - 40px);
+	}
+`;
 
 const MobileHeader = styled.div`
 	display: none;
@@ -20,17 +41,6 @@ const MobileHeader = styled.div`
 	}
 `;
 
-const SideMenu = styled.div`
-	width: 100%;
-	height: 40px;
-
-	background-color: tomato;
-
-	@media (min-width: ${breakpoints.small}) {
-		width: 250px;
-	}
-`;
-
 const MenuToggle = styled.img`
 	width: 20px;
 	height: 20px;
@@ -40,18 +50,65 @@ const MenuToggle = styled.img`
 	cursor: hover;
 `;
 
-const StyleGuide = () => {
-	const iconPath = '../assets/icons/menu_toggle.png';
+const SideMenuDesktopWrapper = styled.div`
+	width: 250px;
+	height: 100%;
 
-	return (
-		<div>
-			<MobileHeader>
-				<MenuToggle src={iconPath} />
-			</MobileHeader>
-			<SideMenu />
-			<StyleContent />
-		</div>
-	);
-};
+	@media (max-width: ${breakpoints.small}) {
+		display: none;
+	}
+`;
+
+const SideMenuMobileWrapper = styled.div`
+	width: 100vw;
+	height: 100vh;
+
+	position: absolute;
+	top: 40px;
+
+	background-color: gold;
+`;
+
+// side menu show always if bigger than small
+// create side menu wrapper that will controll the side menu in
+
+class StyleGuide extends React.Component {
+	constructor() {
+		super();
+
+		this.state = {
+			showMenu: false,
+		};
+	}
+
+	toggleMenu = () => {
+		this.setState({
+			showMenu: !this.state.showMenu,
+		});
+	};
+
+	render() {
+		const iconPath = '../assets/icons/menu_toggle.png';
+
+		return (
+			<StyleGuideMainWrapper>
+				<MobileHeader>
+					<MenuToggle src={iconPath} onClick={this.toggleMenu} />
+				</MobileHeader>
+				<StyleGuideContentWrapper>
+					<SideMenuDesktopWrapper>
+						<SideMenu />
+					</SideMenuDesktopWrapper>
+					<StyleContent />
+				</StyleGuideContentWrapper>
+				{this.state.showMenu && (
+					<SideMenuMobileWrapper>
+						<SideMenu />
+					</SideMenuMobileWrapper>
+				)}
+			</StyleGuideMainWrapper>
+		);
+	}
+}
 
 export default StyleGuide;

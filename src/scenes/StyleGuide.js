@@ -65,12 +65,7 @@ const SideMenuMobileWrapper = styled.div`
 
 	position: absolute;
 	top: 40px;
-
-	background-color: gold;
 `;
-
-// side menu show always if bigger than small
-// create side menu wrapper that will controll the side menu in
 
 class StyleGuide extends React.Component {
 	constructor() {

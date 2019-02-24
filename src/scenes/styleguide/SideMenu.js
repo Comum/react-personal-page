@@ -29,12 +29,16 @@ const StyleList = styled.ul`
 `;
 
 const StyleOption = styled.li`
-	margin-bottom: 10px;
+	padding: 5px 10px;
 
 	&:hover {
 		text-decoration: underline;
 		cursor: pointer;
 	}
+`;
+
+const StyleDropDownOption = styled.details`
+	padding: 5px 10px;
 `;
 
 const getTopicsList = (topics, callback) => {
@@ -60,10 +64,10 @@ const getTopicsList = (topics, callback) => {
 		});
 
 		return (
-			<details key={topic.id}>
+			<StyleDropDownOption key={topic.id}>
 				<summary>{topic.header}</summary>
 				{topicChildren}
-			</details>
+			</StyleDropDownOption>
 		);
 	});
 };

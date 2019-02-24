@@ -60,8 +60,8 @@ const SideMenuDesktopWrapper = styled.div`
 `;
 
 const SideMenuMobileWrapper = styled.div`
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: calc(100% - 40px);
 
 	position: absolute;
 	top: 40px;

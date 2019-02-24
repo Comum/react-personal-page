@@ -7,14 +7,11 @@ import colours from '../../theme/colours';
 const SideMenuContainer = styled.div`
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 
 	outline: 1px solid black;
 
 	background-color: ${colours.bright};
-
-	@media (max-width: ${breakpoints.small}) {
-		outline-radius: 5px;
-	}
 
 	@media (min-width: ${breakpoints.small}) {
 		border: 0px solid black;

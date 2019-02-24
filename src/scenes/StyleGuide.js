@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReactResizeDetector from 'react-resize-detector';
+import axios from 'axios';
 
 import breakpoints from '../theme/breakpoints';
 import StyleContent from './styleguide/StyleContent';
@@ -75,10 +76,26 @@ class StyleGuide extends React.Component {
 	constructor() {
 		super();
 
+		this.dataUrl = `${window.location.origin}/assets/data/styleContent.json`;
 		this.state = {
 			showMenu: false,
 			content: 'default',
+			data: [],
 		};
+	}
+
+	componentDidMount() {
+		axios
+			.get(this.dataUrl)
+			.then(response => {
+				this.setState({
+					data: response.data.topics,
+				});
+			})
+			.catch(function(error) {
+				// still need to find a way to handle this
+				console.log(error);
+			});
 	}
 
 	changeContent = newContent => {
@@ -111,13 +128,13 @@ class StyleGuide extends React.Component {
 					</MobileHeader>
 					<StyleGuideContentWrapper>
 						<SideMenuDesktopWrapper>
-							<SideMenu callback={this.changeContent} />
+							<SideMenu callback={this.changeContent} topics={this.state.data} />
 						</SideMenuDesktopWrapper>
 						<StyleContent content={this.state.content} />
 					</StyleGuideContentWrapper>
 					{this.state.showMenu && (
 						<SideMenuMobileWrapper>
-							<SideMenu callback={this.changeContent} />
+							<SideMenu callback={this.changeContent} topics={this.state.data} />
 						</SideMenuMobileWrapper>
 					)}
 				</StyleGuideMainWrapper>

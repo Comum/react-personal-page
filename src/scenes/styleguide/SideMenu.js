@@ -30,15 +30,52 @@ const StyleList = styled.ul`
 
 const StyleOption = styled.li`
 	margin-bottom: 10px;
+
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 `;
 
-const SideMenu = props => (
-	<SideMenuContainer>
-		<StyleList>
-			<StyleOption onClick={() => props.callback('typo')}>Typography</StyleOption>
-			<StyleOption onClick={() => props.callback('colours')}>Colours</StyleOption>
-		</StyleList>
-	</SideMenuContainer>
-);
+const getTopicsList = (topics, callback) => {
+	if (!topics) {
+		return <div />;
+	}
+
+	return topics.map(topic => {
+		if (!topic.children.length) {
+			return (
+				<StyleOption key={topic.id} onClick={() => callback(topic.component)}>
+					{topic.header}
+				</StyleOption>
+			);
+		}
+
+		const topicChildren = topic.children.map(childTopic => {
+			return (
+				<StyleOption key={childTopic.id} onClick={() => callback(childTopic.component)}>
+					{childTopic.header}
+				</StyleOption>
+			);
+		});
+
+		return (
+			<details key={topic.id}>
+				<summary>{topic.header}</summary>
+				{topicChildren}
+			</details>
+		);
+	});
+};
+
+const SideMenu = ({ topics, callback }) => {
+	const topicsList = getTopicsList(topics, callback);
+
+	return (
+		<SideMenuContainer>
+			<StyleList>{topicsList}</StyleList>
+		</SideMenuContainer>
+	);
+};
 
 export default SideMenu;

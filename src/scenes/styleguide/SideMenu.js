@@ -45,7 +45,7 @@ const getTopicsList = (topics, callback) => {
 	return topics.map(topic => {
 		if (!topic.children.length) {
 			return (
-				<StyleOption key={topic.id} onClick={() => callback(topic.component)}>
+				<StyleOption key={topic.id} onClick={() => callback(topic.component, topic.header)}>
 					{topic.header}
 				</StyleOption>
 			);
@@ -53,7 +53,7 @@ const getTopicsList = (topics, callback) => {
 
 		const topicChildren = topic.children.map(childTopic => {
 			return (
-				<StyleOption key={childTopic.id} onClick={() => callback(childTopic.component)}>
+				<StyleOption key={childTopic.id} onClick={() => callback(childTopic.component, childTopic.header)}>
 					{childTopic.header}
 				</StyleOption>
 			);

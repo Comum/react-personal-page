@@ -80,6 +80,7 @@ class StyleGuide extends React.Component {
 		this.state = {
 			showMenu: false,
 			content: 'default',
+			header: 'Style Guide',
 			data: [],
 		};
 	}
@@ -98,10 +99,11 @@ class StyleGuide extends React.Component {
 			});
 	}
 
-	changeContent = newContent => {
+	changeContent = (newContent, newHeader) => {
 		this.setState({
 			showMenu: false,
 			content: newContent,
+			header: newHeader,
 		});
 	};
 
@@ -119,7 +121,7 @@ class StyleGuide extends React.Component {
 
 	render() {
 		const iconPath = '../assets/icons/menu_toggle.png';
-
+		console.log(this.state);
 		return (
 			<ReactResizeDetector handleWidth handleHeight onResize={this.handleResize}>
 				<StyleGuideMainWrapper onResize={this.handleResize}>
@@ -130,7 +132,7 @@ class StyleGuide extends React.Component {
 						<SideMenuDesktopWrapper>
 							<SideMenu callback={this.changeContent} topics={this.state.data} />
 						</SideMenuDesktopWrapper>
-						<StyleContent content={this.state.content} />
+						<StyleContent content={this.state.content} header={this.state.header} />
 					</StyleGuideContentWrapper>
 					{this.state.showMenu && (
 						<SideMenuMobileWrapper>

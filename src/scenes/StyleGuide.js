@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactResizeDetector from 'react-resize-detector';
 
 import breakpoints from '../theme/breakpoints';
 import StyleContent from './styleguide/StyleContent';
@@ -60,11 +61,14 @@ const SideMenuDesktopWrapper = styled.div`
 `;
 
 const SideMenuMobileWrapper = styled.div`
-	width: 100%;
+	width: 99%;
 	height: calc(100% - 40px);
 
 	position: absolute;
 	top: 40px;
+	left: 0;
+	right: 0;
+	margin: auto;
 `;
 
 class StyleGuide extends React.Component {
@@ -73,8 +77,16 @@ class StyleGuide extends React.Component {
 
 		this.state = {
 			showMenu: false,
+			content: 'default',
 		};
 	}
+
+	changeContent = newContent => {
+		this.setState({
+			showMenu: false,
+			content: newContent,
+		});
+	};
 
 	toggleMenu = () => {
 		this.setState({
@@ -82,26 +94,34 @@ class StyleGuide extends React.Component {
 		});
 	};
 
+	handleResize = () => {
+		this.setState({
+			showMenu: false,
+		});
+	};
+
 	render() {
 		const iconPath = '../assets/icons/menu_toggle.png';
 
 		return (
-			<StyleGuideMainWrapper>
-				<MobileHeader>
-					<MenuToggle src={iconPath} onClick={this.toggleMenu} />
-				</MobileHeader>
-				<StyleGuideContentWrapper>
-					<SideMenuDesktopWrapper>
-						<SideMenu />
-					</SideMenuDesktopWrapper>
-					<StyleContent />
-				</StyleGuideContentWrapper>
-				{this.state.showMenu && (
-					<SideMenuMobileWrapper>
-						<SideMenu />
-					</SideMenuMobileWrapper>
-				)}
-			</StyleGuideMainWrapper>
+			<ReactResizeDetector handleWidth handleHeight onResize={this.handleResize}>
+				<StyleGuideMainWrapper onResize={this.handleResize}>
+					<MobileHeader>
+						<MenuToggle src={iconPath} onClick={this.toggleMenu} />
+					</MobileHeader>
+					<StyleGuideContentWrapper>
+						<SideMenuDesktopWrapper>
+							<SideMenu callback={this.changeContent} />
+						</SideMenuDesktopWrapper>
+						<StyleContent content={this.state.content} />
+					</StyleGuideContentWrapper>
+					{this.state.showMenu && (
+						<SideMenuMobileWrapper>
+							<SideMenu callback={this.changeContent} />
+						</SideMenuMobileWrapper>
+					)}
+				</StyleGuideMainWrapper>
+			</ReactResizeDetector>
 		);
 	}
 }

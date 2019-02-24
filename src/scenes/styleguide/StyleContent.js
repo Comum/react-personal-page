@@ -1,5 +1,5 @@
 import React from 'react';
 
-const StyleContent = () => <div>StyleContent</div>;
+const StyleContent = props => <div>{props.content}</div>;
 
 export default StyleContent;

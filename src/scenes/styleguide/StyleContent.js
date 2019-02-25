@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import StyleBody from './StyleBody';
 import fonts from '../../theme/fonts';
 
 const StyleContentWrapper = styled.section`
@@ -18,15 +19,10 @@ const StyleHeader = styled.div`
 	font-size: ${fonts.sizes.subtitle1};
 `;
 
-const StyleBody = styled.div`
-	width: 100%;
-	height: calc(100% - 50px);
-`;
-
 const StyleContent = props => (
 	<StyleContentWrapper>
 		<StyleHeader>{props.header}</StyleHeader>
-		<StyleBody>{props.content}</StyleBody>
+		<StyleBody content={props.content} />
 	</StyleContentWrapper>
 );
 

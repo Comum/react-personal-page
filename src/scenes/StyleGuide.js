@@ -121,7 +121,7 @@ class StyleGuide extends React.Component {
 
 	render() {
 		const iconPath = '../assets/icons/menu_toggle.png';
-		console.log(this.state);
+
 		return (
 			<ReactResizeDetector handleWidth handleHeight onResize={this.handleResize}>
 				<StyleGuideMainWrapper onResize={this.handleResize}>

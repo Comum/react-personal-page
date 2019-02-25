@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import RocketMan from '../components/RocketMan/RocketMan'
-import Body from '../components/typography/Body'
-import fonts from '../theme/fonts'
+import RocketMan from '../components/RocketMan/RocketMan';
+import Body from '../components/typography/Body';
+import fonts from '../theme/fonts';
 
 const TitleContainer = styled.div`
     width: 100%;
@@ -12,26 +12,22 @@ const TitleContainer = styled.div`
 
     font-size: ${fonts.sizes.small.mainTitle}
     text-align: center;
-`
+`;
 
 const BodyContainer = styled.div`
-    margin-top: 20px;
+	margin-top: 20px;
 
-    text-align: center;
-`
+	text-align: center;
+`;
 
 const EasterEgg = () => (
-    <div>
-        <TitleContainer>
-            I am the easter egg page
-        </TitleContainer>
-        <BodyContainer>
-            <Body colour="tertiary">
-                Nothing to see here though
-            </Body>
-            <RocketMan />
-        </BodyContainer>
-    </div>
-)
+	<div>
+		<TitleContainer>I am the easter egg page</TitleContainer>
+		<BodyContainer>
+			<Body colour="tertiary">Nothing to see here though</Body>
+			<RocketMan />
+		</BodyContainer>
+	</div>
+);
 
-export default EasterEgg
+export default EasterEgg;

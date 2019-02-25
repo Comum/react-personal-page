@@ -2,16 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 
 import DefaultContent from './styleComponents/DefaultContent';
+import TypographyContent from './styleComponents/TypographyContent';
 
 const BodyContainer = styled.section`
 	width: 100%;
-	height: calc(100% - 50px);
+	height: calc(100% - 60px);
 
-	overflow: hidden;
+	padding: 0 20px 10px;
+
+	overflow: auto;
 `;
 
 const handleContent = content => {
 	switch (content) {
+		case 'TypographyContent':
+			return TypographyContent;
 		default:
 			return DefaultContent;
 	}
@@ -19,7 +24,6 @@ const handleContent = content => {
 
 const StyleBody = ({ content }) => {
 	const StyleContent = handleContent(content);
-	console.log('StyleContent', StyleContent);
 
 	return (
 		<BodyContainer>

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import DefaultContent from './styleComponents/DefaultContent';
-import TypographyContent from './styleComponents/TypographyContent';
+import DefaultContent from './styleContent/DefaultContent';
+import TypographyContent from './styleContent/TypographyContent';
 
 const BodyContainer = styled.section`
 	width: 100%;

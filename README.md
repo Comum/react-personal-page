@@ -7,8 +7,15 @@ This is a webpage about myself. A small react pdf page that shows a little bit a
 Created using [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 ## Commands
- - `npm start` - starts the application
- - `npm run build` - builds the dist folder
- - `npm run test` - runs the tests
- - `npm run eject` - ejects the project from create-react-app
- - `npm run deploy:surge` - deploys the project to comum.surge.sh
+
+-   `npm start` - starts the application
+-   `npm run build` - builds the dist folder
+-   `npm run test` - runs the tests
+-   `npm run eject` - ejects the project from create-react-app
+-   `npm run deploy:surge` - deploys the project to comum.surge.sh
+
+## Routes
+
+-   `/` - root
+-   `/works/:id` - work information
+-   `/styleguide` - web site style guide

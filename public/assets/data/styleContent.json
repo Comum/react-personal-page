@@ -9,7 +9,7 @@
 		{
 			"id": 2,
 			"header": "Colours",
-			"component": "ColoursContent",
+			"component": "ColourContent",
 			"children": []
 		},
 		{

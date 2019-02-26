@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 import DefaultContent from './styleContent/DefaultContent';
 import TypographyContent from './styleContent/TypographyContent';
+import ColourContent from './styleContent/ColourContent';
 
 const BodyContainer = styled.section`
-	width: 100%;
+	width: calc(100% - 40px);
 	height: calc(100% - 60px);
 
 	padding: 0 20px 10px;
@@ -17,6 +18,8 @@ const handleContent = content => {
 	switch (content) {
 		case 'TypographyContent':
 			return TypographyContent;
+		case 'ColourContent':
+			return ColourContent;
 		default:
 			return DefaultContent;
 	}

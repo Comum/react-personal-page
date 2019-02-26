@@ -13,11 +13,9 @@ const MainContainer = styled.ul`
 	padding: 0;
 `;
 
-//contacts.map(contact => <ContactElement key={contact.id} contact={contact} />);
 const getTypographyItems = () => {
 	const items = [];
 	let i = 0;
-	console.log('fonts', fonts);
 
 	for (let property in fonts.sizes) {
 		if (typeof fonts.sizes[property] === 'string') {

@@ -40,7 +40,11 @@ const getTypographyItems = () => {
 					font-size: ${typoProperty[child]};
 				`;
 
-				items.push(<TypographyItem key={i}>I am the {child}.</TypographyItem>);
+				items.push(
+					<TypographyItem key={i}>
+						I am the {property}.{child}.
+					</TypographyItem>,
+				);
 				i++;
 			}
 		}

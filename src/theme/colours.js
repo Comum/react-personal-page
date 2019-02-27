@@ -1,7 +1,7 @@
 const colours = {
-	bright: '#FFFFFF',
-	dark: '#58798C',
 	style: {
+		bright: '#FFFFFF',
+		dark: '#58798C',
 		primary: '#00A0DC',
 		primaryFaded: '#00BBFF',
 		primaryThin: '#B3EBFF',

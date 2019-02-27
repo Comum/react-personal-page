@@ -41,14 +41,14 @@ const ColourWrapperBright = styled.div`
 	width: 100%;
 	height: 100%;
 
-	background-color: ${colours.bright};
+	background-color: ${colours.style.bright};
 `;
 
 const ColourWrapperDark = styled.div`
 	width: 100%;
 	height: 100%;
 
-	background-color: ${colours.dark};
+	background-color: ${colours.style.dark};
 `;
 
 const ColourWrapperPrimary = styled.div`
@@ -107,7 +107,7 @@ const ColourContent = () => {
 					<ColourWrapper>
 						<ColourWrapperBright />
 					</ColourWrapper>
-					<ColourName>{colours.bright}</ColourName>
+					<ColourName>{colours.style.bright}</ColourName>
 				</ColourElement>
 			</ColourRow>
 			<ColourRow>
@@ -115,7 +115,7 @@ const ColourContent = () => {
 					<ColourWrapper>
 						<ColourWrapperDark />
 					</ColourWrapper>
-					<ColourName>{colours.dark}</ColourName>
+					<ColourName>{colours.style.dark}</ColourName>
 				</ColourElement>
 			</ColourRow>
 			<ColourRow>

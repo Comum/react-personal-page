@@ -11,7 +11,7 @@ const SideMenuContainer = styled.div`
 
 	outline: 1px solid black;
 
-	background-color: ${colours.bright};
+	background-color: ${colours.style.bright};
 
 	@media (min-width: ${breakpoints.small}) {
 		border: 0px solid black;

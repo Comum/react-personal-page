@@ -8,6 +8,7 @@ const colours = {
 		secondary: '#FEFFF8',
 		tertiary: '#29241E',
 		quaternary: '#AAAAAA',
+		newColour: 'aaa',
 	},
 };
 

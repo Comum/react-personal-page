@@ -12,10 +12,8 @@ Created using [Create React App documentation](https://facebook.github.io/create
 -   `npm run build` - builds the dist folder
 -   `npm run test` - runs the tests
 -   `npm run eject` - ejects the project from create-react-app
--   `npm run deploy:surge` - deploys the project to comum.surge.sh
 
 ## Routes
 
 -   `/` - root
 -   `/works/:id` - work information
--   `/styleguide` - web site style guide
